@@ -1,0 +1,252 @@
+2018-04-05 21:36:40 INFO  TestBase:125 - Open https://connect.fluke.com/en/login
+
+2018-04-05 21:36:41 INFO  TestBase:166 - browser closed
+2018-04-05 21:59:30 INFO  TestBase:125 - Open https://connect.fluke.com/en/login
+
+2018-04-05 21:59:31 INFO  TestBase:166 - browser closed
+2018-04-06 20:03:38 INFO  TestBase:125 - Open https://connect.fluke.com/en/login
+
+2018-04-06 20:03:39 INFO  TestBase:166 - browser closed
+2018-04-06 20:10:16 INFO  TestBase:125 - Open https://connect.fluke.com/en/login
+
+2018-04-06 20:10:21 INFO  TestBase:166 - browser closed
+2018-04-06 20:15:13 INFO  TestBase:126 - Open https://connect.fluke.com/en/login
+
+2018-04-06 20:15:24 INFO  TestBase:175 - browser closed
+2018-04-06 20:48:58 INFO  TestBase:177 - Open https://connect.fluke.com/en/login
+
+2018-04-06 20:49:03 INFO  TestBase:226 - browser closed
+2018-04-06 20:54:33 INFO  TestBase:177 - Open https://connect.fluke.com/en/login
+
+2018-04-06 20:54:35 INFO  TestBase:226 - browser closed
+2018-04-06 21:31:47 INFO  TestBase:182 - Open https://connect.fluke.com/en/login
+
+2018-04-06 21:32:19 INFO  TestBase:231 - browser closed
+2018-04-06 21:39:41 INFO  TestBase:171 - Open https://connect.fluke.com/en/login
+
+2018-04-06 21:40:26 INFO  TestBase:220 - browser closed
+2018-04-06 21:43:43 INFO  TestBase:171 - Open https://connect.fluke.com/en/login
+
+2018-04-06 21:43:45 INFO  TestBase:220 - browser closed
+2018-04-06 21:47:40 INFO  TestBase:171 - Open https://connect.fluke.com/en/login
+
+2018-04-06 21:47:51 INFO  TestBase:220 - browser closed
+2018-04-06 21:56:32 INFO  TestBase:172 - Open https://connect.fluke.com/en/login
+
+2018-04-06 21:56:45 INFO  TestBase:222 - browser closed
+2018-04-06 21:59:02 INFO  TestBase:172 - Open https://connect.fluke.com/en/login
+
+2018-04-06 21:59:10 INFO  TestBase:222 - browser closed
+2018-04-06 22:03:09 INFO  TestBase:172 - Open https://connect.fluke.com/en/login
+
+2018-04-06 22:50:04 INFO  TestBase:172 - Open https://connect.fluke.com/en/login
+
+2018-04-06 22:50:29 INFO  TestBase:222 - browser closed
+2018-04-06 22:52:07 INFO  TestBase:172 - Open https://connect.fluke.com/en/login
+
+2018-04-06 22:52:48 INFO  TestBase:222 - browser closed
+2018-04-06 22:53:22 INFO  TestBase:172 - Open https://connect.fluke.com/en/login
+
+2018-04-06 22:54:05 INFO  TestBase:222 - browser closed
+2018-04-06 22:55:35 INFO  TestBase:172 - Open https://connect.fluke.com/en/login
+
+2018-04-06 22:55:37 INFO  TestBase:222 - browser closed
+2018-04-06 22:56:09 INFO  TestBase:172 - Open https://connect.fluke.com/en/login
+
+2018-04-06 22:56:10 INFO  TestBase:222 - browser closed
+2018-04-06 22:57:12 INFO  TestBase:172 - Open https://connect.fluke.com/en/login
+
+2018-04-06 22:59:32 INFO  TestBase:172 - Open https://connect.fluke.com/en/login
+
+2018-04-06 23:02:29 INFO  TestBase:172 - Open https://connect.fluke.com/en/login
+
+2018-04-06 23:04:03 INFO  TestBase:172 - Open https://connect.fluke.com/en/login
+
+2018-04-06 23:19:01 INFO  TestBase:172 - Open https://connect.fluke.com/en/login
+
+2018-04-06 23:21:37 INFO  TestBase:174 - Open https://connect.fluke.com/en/login
+
+2018-04-06 23:33:19 INFO  TestBase:174 - Open https://connect.fluke.com/en/login
+
+2018-04-06 23:34:34 INFO  TestBase:174 - Open https://connect.fluke.com/en/login
+
+2018-04-06 23:48:55 INFO  TestBase:174 - Open https://connect.fluke.com/en/login
+
+2018-04-06 23:49:10 INFO  MeasurementScreenTest:19 - clicked on Measurements
+2018-04-06 23:53:47 INFO  TestBase:174 - Open https://connect.fluke.com/en/login
+
+2018-04-07 00:04:05 INFO  TestBase:174 - Open https://connect.fluke.com/en/login
+
+2018-04-07 08:23:28 INFO  TestBase:176 - Open https://connect.fluke.com/en/login
+
+2018-04-07 08:24:46 INFO  TestBase:176 - Open https://connect.fluke.com/en/login
+
+2018-04-07 13:38:00 INFO  TestBase:176 - Open https://connect.fluke.com/en/login
+
+2018-04-07 13:57:21 INFO  TestBase:176 - Open https://connect.fluke.com/en/login
+
+2018-04-07 14:06:43 INFO  TestBase:176 - Open https://connect.fluke.com/en/login
+
+2018-04-07 14:12:32 INFO  TestBase:178 - Open https://connect.fluke.com/en/login
+
+2018-04-07 14:29:57 INFO  TestBase:178 - Open https://connect.fluke.com/en/login
+
+2018-04-07 14:33:48 INFO  TestBase:179 - Open https://connect.fluke.com/en/login
+
+2018-04-07 14:37:11 INFO  TestBase:179 - Open https://connect.fluke.com/en/login
+
+2018-04-07 14:37:52 INFO  TestBase:179 - Open https://connect.fluke.com/en/login
+
+2018-04-07 14:40:03 INFO  TestBase:179 - Open https://connect.fluke.com/en/login
+
+2018-04-07 14:53:51 INFO  TestBase:179 - Open https://connect.fluke.com/en/login
+
+2018-04-07 15:02:31 INFO  TestBase:179 - Open https://connect.fluke.com/en/login
+
+2018-04-07 15:23:31 INFO  TestBase:179 - Open https://connect.fluke.com/en/login
+
+2018-04-07 15:34:32 INFO  TestBase:179 - Open https://connect.fluke.com/en/login
+
+2018-04-07 15:37:14 INFO  TestBase:179 - Open https://connect.fluke.com/en/login
+
+2018-04-07 15:39:34 INFO  TestBase:179 - Open https://connect.fluke.com/en/login
+
+2018-04-07 15:51:50 INFO  TestBase:179 - Open https://connect.fluke.com/en/login
+
+2018-04-07 15:56:04 INFO  TestBase:179 - Open https://connect.fluke.com/en/login
+
+2018-04-07 19:17:56 INFO  TestBase:179 - Open https://connect.fluke.com/en/login
+
+2018-04-07 19:20:35 INFO  TestBase:179 - Open https://connect.fluke.com/en/login
+
+2018-04-07 19:20:35 INFO  TestBase:179 - Open https://connect.fluke.com/en/login
+
+2018-04-07 19:20:37 INFO  TestBase:179 - Open https://connect.fluke.com/en/login
+
+2018-04-07 19:21:53 INFO  TestBase:179 - Open https://connect.fluke.com/en/login
+
+2018-04-07 19:28:33 INFO  TestBase:182 - Open https://connect.fluke.com/en/login
+
+2018-04-07 19:30:18 INFO  TestBase:182 - Open https://connect.fluke.com/en/login
+
+2018-04-07 19:35:32 INFO  TestBase:185 - Open https://connect.fluke.com/en/login
+
+2018-04-07 20:14:11 INFO  TestBase:185 - Open https://connect.fluke.com/en/login
+
+2018-04-07 20:14:44 INFO  TestBase:185 - waiting to load page 
+2018-04-07 20:15:14 INFO  TestBase:185 - total number of images are present2
+2018-04-07 21:18:59 INFO  TestBase:185 - Open https://connect.fluke.com/en/login
+
+2018-04-07 21:19:56 INFO  TestBase:185 - waiting to load page 
+2018-04-07 21:20:39 INFO  TestBase:185 - found exception  org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.linkText: List (tried for 30 second(s) with 500 MILLISECONDS interval)
+2018-04-07 21:20:48 INFO  TestBase:235 - browser closed
+2018-04-07 21:22:58 INFO  TestBase:185 - Open https://connect.fluke.com/en/login
+
+2018-04-07 21:24:58 INFO  TestBase:185 - found exception  org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.linkText: List (tried for 30 second(s) with 500 MILLISECONDS interval)
+2018-04-07 21:26:40 INFO  TestBase:143 - Open 
+2018-04-07 21:26:40 INFO  TestBase:185 - Open https://connect.fluke.com/en/login
+
+2018-04-07 21:28:13 INFO  TestBase:185 - waiting to load page 
+2018-04-07 21:28:56 INFO  TestBase:185 - found exception  org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.linkText: List (tried for 30 second(s) with 500 MILLISECONDS interval)
+2018-04-07 21:29:00 INFO  TestBase:235 - browser closed
+2018-04-07 21:31:41 INFO  TestBase:185 - Open https://connect.fluke.com/en/login
+
+2018-04-07 21:33:21 INFO  TestBase:185 - found exception  org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.linkText: List (tried for 60 second(s) with 500 MILLISECONDS interval)
+2018-04-07 21:35:04 INFO  TestBase:143 - Open 
+2018-04-07 21:35:04 INFO  TestBase:185 - Open https://connect.fluke.com/en/login
+
+2018-04-07 21:36:46 INFO  TestBase:235 - browser closed
+2018-04-07 22:08:25 INFO  TestBase:185 - Open https://connect.fluke.com/en/login
+
+2018-04-07 22:09:25 INFO  TestBase:185 - found exception  org.openqa.selenium.WebDriverException: unknown error: Element <div class="measurementSelect sprite check-box"></div> is not clickable at point (415, 497). Other element would receive the click: <div id="cboxOverlay" style="opacity: 0.5; cursor: pointer; visibility: visible;"></div>
+  (Session info: chrome=65.0.3325.181)
+  (Driver info: chromedriver=2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.7.0', revision: '2321c73', time: '2017-11-02T22:22:35.584Z'
+System info: host: 'DESKTOP-QTFQ6AF', ip: '192.168.43.181', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_101'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.37.544315 (730aa6a5fdba15..., userDataDir: C:\Users\sachin\AppData\Loc...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 65.0.3325.181, webStorageEnabled: true}
+Session ID: 6d77d7fb4c7ad6156b32dd5ab72b0db9
+2018-04-07 22:10:20 INFO  TestBase:143 - Open 
+2018-04-07 22:10:20 INFO  TestBase:185 - Open https://connect.fluke.com/en/login
+
+2018-04-07 22:10:29 INFO  TestBase:185 - waiting to load page 
+2018-04-07 22:11:32 INFO  TestBase:185 - total number of images are present5
+2018-04-07 22:11:33 INFO  TestBase:235 - browser closed
+2018-04-07 22:25:13 INFO  TestBase:185 - Open https://connect.fluke.com/en/login
+
+2018-04-07 22:26:08 INFO  TestBase:185 - found exception  org.openqa.selenium.WebDriverException: unknown error: Element <div class="measurementSelect sprite check-box"></div> is not clickable at point (415, 497). Other element would receive the click: <div id="cboxOverlay" style="opacity: 0.5; cursor: pointer; visibility: visible;"></div>
+  (Session info: chrome=65.0.3325.181)
+  (Driver info: chromedriver=2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.7.0', revision: '2321c73', time: '2017-11-02T22:22:35.584Z'
+System info: host: 'DESKTOP-QTFQ6AF', ip: '192.168.43.181', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_101'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.37.544315 (730aa6a5fdba15..., userDataDir: C:\Users\sachin\AppData\Loc...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 65.0.3325.181, webStorageEnabled: true}
+Session ID: c8b11e1d6267456a2ae4503bb46e3303
+2018-04-07 22:27:13 INFO  TestBase:143 - Open 
+2018-04-07 22:27:13 INFO  TestBase:185 - Open https://connect.fluke.com/en/login
+
+2018-04-07 22:27:56 INFO  TestBase:185 - waiting to load page 
+2018-04-07 22:29:22 INFO  TestBase:185 - found exception  org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.linkText: List (tried for 60 second(s) with 500 MILLISECONDS interval)
+2018-04-07 22:29:28 INFO  TestBase:235 - browser closed
+2018-04-07 22:32:25 INFO  TestBase:185 - Open https://connect.fluke.com/en/login
+
+2018-04-07 22:32:53 INFO  TestBase:185 - waiting to load page 
+2018-04-07 22:33:22 INFO  TestBase:185 - total number of images are present5
+2018-04-07 22:34:14 INFO  TestBase:143 - Open 
+2018-04-07 22:34:14 INFO  TestBase:185 - Open https://connect.fluke.com/en/login
+
+2018-04-07 22:35:16 INFO  TestBase:185 - found exception  org.openqa.selenium.WebDriverException: unknown error: Element <div class="measurementSelect sprite check-box"></div> is not clickable at point (415, 497). Other element would receive the click: <div id="cboxOverlay" style="opacity: 0.5; cursor: pointer; visibility: visible;"></div>
+  (Session info: chrome=65.0.3325.181)
+  (Driver info: chromedriver=2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.7.0', revision: '2321c73', time: '2017-11-02T22:22:35.584Z'
+System info: host: 'DESKTOP-QTFQ6AF', ip: '192.168.43.181', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_101'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.37.544315 (730aa6a5fdba15..., userDataDir: C:\Users\sachin\AppData\Loc...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 65.0.3325.181, webStorageEnabled: true}
+Session ID: eedd040fbd99fb95dcc69a2d2d37a9a3
+2018-04-07 22:35:19 INFO  TestBase:235 - browser closed
+2018-04-07 22:40:54 INFO  TestBase:185 - Open https://connect.fluke.com/en/login
+
+2018-04-07 22:42:58 INFO  TestBase:185 - found exception  org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.linkText: List (tried for 60 second(s) with 500 MILLISECONDS interval)
+2018-04-07 22:43:08 INFO  TestBase:235 - browser closed
+2018-04-07 23:03:29 INFO  TestBase:185 - Open https://connect.fluke.com/en/login
+
+2018-04-07 23:04:26 INFO  TestBase:185 - total imgae before deletion5
+2018-04-07 23:04:27 INFO  TestBase:185 - found exception  org.openqa.selenium.WebDriverException: unknown error: Element <div class="measurementSelect sprite check-box"></div> is not clickable at point (415, 497). Other element would receive the click: <div id="cboxOverlay" style="opacity: 0.5; cursor: pointer; visibility: visible;"></div>
+  (Session info: chrome=65.0.3325.181)
+  (Driver info: chromedriver=2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.7.0', revision: '2321c73', time: '2017-11-02T22:22:35.584Z'
+System info: host: 'DESKTOP-QTFQ6AF', ip: '192.168.43.181', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_101'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.37.544315 (730aa6a5fdba15..., userDataDir: C:\Users\sachin\AppData\Loc...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 65.0.3325.181, webStorageEnabled: true}
+Session ID: ad6dec9ed56c821d880ba1370944f368
+2018-04-07 23:04:32 INFO  TestBase:235 - browser closed
+2018-04-08 00:02:36 INFO  TestBase:186 - Open https://connect.fluke.com/en/login
+
+2018-04-08 00:02:45 INFO  TestBase:186 - total imgae before deletion5
+2018-04-08 00:02:45 INFO  TestBase:186 - found exception  org.openqa.selenium.WebDriverException: unknown error: Element <div class="measurementSelect sprite check-box"></div> is not clickable at point (692, 497). Other element would receive the click: <div id="cboxOverlay" style="opacity: 0.5; cursor: pointer; visibility: visible;"></div>
+  (Session info: chrome=65.0.3325.181)
+  (Driver info: chromedriver=2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.7.0', revision: '2321c73', time: '2017-11-02T22:22:35.584Z'
+System info: host: 'DESKTOP-EVAHJRN', ip: '10.0.75.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_161'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.37.544315 (730aa6a5fdba15..., userDataDir: C:\Users\DELL\AppData\Local...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 65.0.3325.181, webStorageEnabled: true}
+Session ID: bb845b5ccb88921e71de88013a39fdba
+2018-04-08 00:02:46 INFO  TestBase:236 - browser closed
+2018-04-08 00:10:08 INFO  TestBase:186 - Open https://connect.fluke.com/en/login
+
+2018-04-08 00:10:16 INFO  TestBase:186 - total imgae before deletion5
+2018-04-08 00:10:17 INFO  TestBase:186 - found exception  org.openqa.selenium.WebDriverException: unknown error: Element <div class="measurementSelect sprite check-box"></div> is not clickable at point (692, 927). Other element would receive the click: <div id="cboxOverlay" style="opacity: 0.5; cursor: pointer; visibility: visible;"></div>
+  (Session info: chrome=65.0.3325.181)
+  (Driver info: chromedriver=2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.7.0', revision: '2321c73', time: '2017-11-02T22:22:35.584Z'
+System info: host: 'DESKTOP-EVAHJRN', ip: '10.0.75.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_161'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.37.544315 (730aa6a5fdba15..., userDataDir: C:\Users\DELL\AppData\Local...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 65.0.3325.181, webStorageEnabled: true}
+Session ID: c53ab44b0f99ea6e78eaf609c4f237e7
+2018-04-08 00:10:18 INFO  TestBase:236 - browser closed

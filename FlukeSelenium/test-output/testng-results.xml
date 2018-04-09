@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
+  <reporter-output>
+    <line>
+      <![CDATA[Open https://connect.fluke.com/en/login
+]]>
+    </line>
+    <line>
+      <![CDATA[total imgae before deletion5]]>
+    </line>
+    <line>
+      <![CDATA[<a href='C:\Users\DELL\eclipse-workspace\FlukeSelenium\target\surefire-reports\html\blank_08_04_2018_12_10_16.png'> <img src='_blank08_04_2018_12_10_16.png' height='100' width='100'/> </a>]]>
+    </line>
+    <line>
+      <![CDATA[<a href='C:\Users\DELL\eclipse-workspace\FlukeSelenium\target\surefire-reports\html\blank_08_04_2018_12_10_17.png'> <img src='_blank08_04_2018_12_10_17.png' height='100' width='100'/> </a>]]>
+    </line>
+    <line>
+      <![CDATA[<a href='C:\Users\DELL\eclipse-workspace\FlukeSelenium\target\surefire-reports\html\blank_08_04_2018_12_10_17.png'> <img src='_blank08_04_2018_12_10_17.png' height='100' width='100'/> </a>]]>
+    </line>
+    <line>
+      <![CDATA[found exception  org.openqa.selenium.WebDriverException: unknown error: Element <div class="measurementSelect sprite check-box"></div> is not clickable at point (692, 927). Other element would receive the click: <div id="cboxOverlay" style="opacity: 0.5; cursor: pointer; visibility: visible;"></div>
+  (Session info: chrome=65.0.3325.181)
+  (Driver info: chromedriver=2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.7.0', revision: '2321c73', time: '2017-11-02T22:22:35.584Z'
+System info: host: 'DESKTOP-EVAHJRN', ip: '10.0.75.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_161'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.37.544315 (730aa6a5fdba15..., userDataDir: C:\Users\DELL\AppData\Local...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 65.0.3325.181, webStorageEnabled: true}
+Session ID: c53ab44b0f99ea6e78eaf609c4f237e7]]>
+    </line>
+    <line>
+      <![CDATA[<a href='C:\Users\DELL\eclipse-workspace\FlukeSelenium\target\surefire-reports\html\blank_08_04_2018_12_10_17.png'> <img src='_blank08_04_2018_12_10_17.png' height='100' width='100'/> </a>]]>
+    </line>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="48749" started-at="2018-04-07T18:39:30Z" finished-at="2018-04-07T18:40:18Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="48749" started-at="2018-04-07T18:39:30Z" finished-at="2018-04-07T18:40:18Z">
+      <class name="com.fluke.connect.test_cases.MeasurementScreenTest">
+        <test-method status="PASS" signature="initilization()[pri:0, instance:com.fluke.connect.test_cases.MeasurementScreenTest@396e2f39]" name="initilization" is-config="true" duration-ms="11" started-at="2018-04-08T00:09:30Z" finished-at="2018-04-08T00:09:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initilization -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.fluke.connect.test_cases.MeasurementScreenTest@396e2f39]" name="setUp" is-config="true" duration-ms="42901" started-at="2018-04-08T00:09:30Z" finished-at="2018-04-08T00:10:13Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Open https://connect.fluke.com/en/login
+]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="FAIL" signature="deleteMeasurements()[pri:1, instance:com.fluke.connect.test_cases.MeasurementScreenTest@396e2f39]" name="deleteMeasurements" duration-ms="4676" started-at="2018-04-08T00:10:13Z" finished-at="2018-04-08T00:10:17Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [2] but found [5]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [2] but found [5]
+	at org.testng.Assert.fail(Assert.java:93)
+	at org.testng.Assert.failNotEquals(Assert.java:512)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:134)
+	at org.testng.Assert.assertEquals(Assert.java:115)
+	at org.testng.Assert.assertEquals(Assert.java:388)
+	at org.testng.Assert.assertEquals(Assert.java:398)
+	at com.fluke.connect.test_cases.MeasurementScreenTest.deleteMeasurements(MeasurementScreenTest.java:134)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+            <line>
+              <![CDATA[total imgae before deletion5]]>
+            </line>
+            <line>
+              <![CDATA[<a href='C:\Users\DELL\eclipse-workspace\FlukeSelenium\target\surefire-reports\html\blank_08_04_2018_12_10_16.png'> <img src='_blank08_04_2018_12_10_16.png' height='100' width='100'/> </a>]]>
+            </line>
+            <line>
+              <![CDATA[<a href='C:\Users\DELL\eclipse-workspace\FlukeSelenium\target\surefire-reports\html\blank_08_04_2018_12_10_17.png'> <img src='_blank08_04_2018_12_10_17.png' height='100' width='100'/> </a>]]>
+            </line>
+            <line>
+              <![CDATA[<a href='C:\Users\DELL\eclipse-workspace\FlukeSelenium\target\surefire-reports\html\blank_08_04_2018_12_10_17.png'> <img src='_blank08_04_2018_12_10_17.png' height='100' width='100'/> </a>]]>
+            </line>
+            <line>
+              <![CDATA[found exception  org.openqa.selenium.WebDriverException: unknown error: Element <div class="measurementSelect sprite check-box"></div> is not clickable at point (692, 927). Other element would receive the click: <div id="cboxOverlay" style="opacity: 0.5; cursor: pointer; visibility: visible;"></div>
+  (Session info: chrome=65.0.3325.181)
+  (Driver info: chromedriver=2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.7.0', revision: '2321c73', time: '2017-11-02T22:22:35.584Z'
+System info: host: 'DESKTOP-EVAHJRN', ip: '10.0.75.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_161'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.37.544315 (730aa6a5fdba15..., userDataDir: C:\Users\DELL\AppData\Local...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 65.0.3325.181, webStorageEnabled: true}
+Session ID: c53ab44b0f99ea6e78eaf609c4f237e7]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- deleteMeasurements -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.fluke.connect.test_cases.MeasurementScreenTest@396e2f39]" name="afterMethod" is-config="true" duration-ms="523" started-at="2018-04-08T00:10:17Z" finished-at="2018-04-08T00:10:18Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=deleteMeasurements status=FAILURE method=MeasurementScreenTest.deleteMeasurements()[pri:1, instance:com.fluke.connect.test_cases.MeasurementScreenTest@396e2f39] output=total imgae before deletion5]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[<a href='C:\Users\DELL\eclipse-workspace\FlukeSelenium\target\surefire-reports\html\blank_08_04_2018_12_10_17.png'> <img src='_blank08_04_2018_12_10_17.png' height='100' width='100'/> </a>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="endTest()[pri:0, instance:com.fluke.connect.test_cases.MeasurementScreenTest@396e2f39]" name="endTest" is-config="true" duration-ms="632" started-at="2018-04-08T00:10:18Z" finished-at="2018-04-08T00:10:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endTest -->
+      </class> <!-- com.fluke.connect.test_cases.MeasurementScreenTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
