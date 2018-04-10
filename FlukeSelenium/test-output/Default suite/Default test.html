@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>1/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sun Apr 08 00:09:30 IST 2018</td>
+<td>Started on:</td><td>Mon Apr 09 22:56:28 IST 2018</td>
 </tr>
-<tr><td>Total time:</td><td>48 seconds (48749 ms)</td>
+<tr><td>Total time:</td><td>107 seconds (107106 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,33 +76,39 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='com.fluke.connect.test_cases.MeasurementScreenTest.deleteMeasurements()'><b>deleteMeasurements</b><br>Test class: com.fluke.connect.test_cases.MeasurementScreenTest<br/>
-<a href="#Output-1706099897" onClick='toggleBox("Output-1706099897", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-1123559518" onClick='toggleBox("Output-1123559518", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1706099897" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1706099897">
-total imgae before deletion5<br/>
-<a href='C:\Users\DELL\eclipse-workspace\FlukeSelenium\target\surefire-reports\html\blank_08_04_2018_12_10_16.png'> <img src='_blank08_04_2018_12_10_16.png' height='100' width='100'/> </a><br/>
-<a href='C:\Users\DELL\eclipse-workspace\FlukeSelenium\target\surefire-reports\html\blank_08_04_2018_12_10_17.png'> <img src='_blank08_04_2018_12_10_17.png' height='100' width='100'/> </a><br/>
-<a href='C:\Users\DELL\eclipse-workspace\FlukeSelenium\target\surefire-reports\html\blank_08_04_2018_12_10_17.png'> <img src='_blank08_04_2018_12_10_17.png' height='100' width='100'/> </a><br/>
-found exception  org.openqa.selenium.WebDriverException: unknown error: Element <div class="measurementSelect sprite check-box"></div> is not clickable at point (692, 927). Other element would receive the click: <div id="cboxOverlay" style="opacity: 0.5; cursor: pointer; visibility: visible;"></div>
+<a href="#Output-1123559518" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1123559518">
+total imgae before deletion is  4<br/>
+image remaining after deletion 1 image   3<br/>
+total number of image present3<br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: unknown error: Element &lt;div class=&quot;measurementSelect sprite check-box&quot;&gt;&lt;/div&gt; is not clickable at point (692, 236). Other element would receive the click: &lt;div id=&quot;cboxOverlay&quot; style=&quot;opacity: 0.00231304; cursor: pointer; visibility: visible;&quot;&gt;&lt;/div&gt;
   (Session info: chrome=65.0.3325.181)
   (Driver info: chromedriver=2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 0 milliseconds
-Build info: version: '3.7.0', revision: '2321c73', time: '2017-11-02T22:22:35.584Z'
-System info: host: 'DESKTOP-EVAHJRN', ip: '10.0.75.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_161'
+Build info: version: &apos;3.7.0&apos;, revision: &apos;2321c73&apos;, time: &apos;2017-11-02T22:22:35.584Z&apos;
+System info: host: &apos;DESKTOP-EVAHJRN&apos;, ip: &apos;10.0.75.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_161&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
 Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.37.544315 (730aa6a5fdba15..., userDataDir: C:\Users\DELL\AppData\Local...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 65.0.3325.181, webStorageEnabled: true}
-Session ID: c53ab44b0f99ea6e78eaf609c4f237e7<br/>
-</div>
-</td>
-<td><div><pre>java.lang.AssertionError: expected [2] but found [5]
-	at org.testng.Assert.fail(Assert.java:93)
-	at org.testng.Assert.failNotEquals(Assert.java:512)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:134)
-	at org.testng.Assert.assertEquals(Assert.java:115)
-	at org.testng.Assert.assertEquals(Assert.java:388)
-	at org.testng.Assert.assertEquals(Assert.java:398)
-	at com.fluke.connect.test_cases.MeasurementScreenTest.deleteMeasurements(MeasurementScreenTest.java:134)
+Session ID: f52b1b97ce5bd54656b8955a9389ce59
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+	at com.fluke.connect.test_cases.MeasurementScreenTest.deleteMeasurements(MeasurementScreenTest.java:112)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -128,15 +134,31 @@ Session ID: c53ab44b0f99ea6e78eaf609c4f237e7<br/>
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1706099897", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1706099897'><pre>java.lang.AssertionError: expected [2] but found [5]
-	at org.testng.Assert.fail(Assert.java:93)
-	at org.testng.Assert.failNotEquals(Assert.java:512)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:134)
-	at org.testng.Assert.assertEquals(Assert.java:115)
-	at org.testng.Assert.assertEquals(Assert.java:388)
-	at org.testng.Assert.assertEquals(Assert.java:398)
-	at com.fluke.connect.test_cases.MeasurementScreenTest.deleteMeasurements(MeasurementScreenTest.java:134)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1123559518", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1123559518'><pre>org.openqa.selenium.WebDriverException: unknown error: Element &lt;div class=&quot;measurementSelect sprite check-box&quot;&gt;&lt;/div&gt; is not clickable at point (692, 236). Other element would receive the click: &lt;div id=&quot;cboxOverlay&quot; style=&quot;opacity: 0.00231304; cursor: pointer; visibility: visible;&quot;&gt;&lt;/div&gt;
+  (Session info: chrome=65.0.3325.181)
+  (Driver info: chromedriver=2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: &apos;3.7.0&apos;, revision: &apos;2321c73&apos;, time: &apos;2017-11-02T22:22:35.584Z&apos;
+System info: host: &apos;DESKTOP-EVAHJRN&apos;, ip: &apos;10.0.75.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_161&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.37.544315 (730aa6a5fdba15..., userDataDir: C:\Users\DELL\AppData\Local...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 65.0.3325.181, webStorageEnabled: true}
+Session ID: f52b1b97ce5bd54656b8955a9389ce59
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+	at com.fluke.connect.test_cases.MeasurementScreenTest.deleteMeasurements(MeasurementScreenTest.java:112)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -163,7 +185,28 @@ Session ID: c53ab44b0f99ea6e78eaf609c4f237e7<br/>
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>4</td>
+<td>6</td>
+<td>com.fluke.connect.test_cases.MeasurementScreenTest@396e2f39</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.fluke.connect.test_cases.MeasurementScreenTest.verifyMeasurements()'><b>verifyMeasurements</b><br>Test class: com.fluke.connect.test_cases.MeasurementScreenTest<br/>
+<a href="#Output-1808009213" onClick='toggleBox("Output-1808009213", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1808009213" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1808009213">
+waiting to load page <br/>
+total number of images are present4<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
 <td>com.fluke.connect.test_cases.MeasurementScreenTest@396e2f39</td></tr>
 </table><p>
 </body>

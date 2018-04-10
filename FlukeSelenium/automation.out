@@ -250,3 +250,14 @@ Driver info: org.openqa.selenium.chrome.ChromeDriver
 Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.37.544315 (730aa6a5fdba15..., userDataDir: C:\Users\DELL\AppData\Local...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 65.0.3325.181, webStorageEnabled: true}
 Session ID: c53ab44b0f99ea6e78eaf609c4f237e7
 2018-04-08 00:10:18 INFO  TestBase:236 - browser closed
+2018-04-09 22:57:07 INFO  TestBase:186 - Open https://connect.fluke.com/en/login
+
+2018-04-09 22:57:18 INFO  TestBase:186 - waiting to load page 
+2018-04-09 22:57:19 INFO  TestBase:186 - total number of images are present4
+2018-04-09 22:57:59 INFO  TestBase:144 - Open 
+2018-04-09 22:57:59 INFO  TestBase:186 - Open https://connect.fluke.com/en/login
+
+2018-04-09 22:58:12 INFO  TestBase:186 - total imgae before deletion is  4
+2018-04-09 22:58:14 INFO  TestBase:186 - image remaining after deletion 1 image   3
+2018-04-09 22:58:14 INFO  TestBase:186 - total number of image present3
+2018-04-09 22:58:15 INFO  TestBase:236 - browser closed

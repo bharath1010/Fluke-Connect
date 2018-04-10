@@ -3,6 +3,7 @@ package com.fluke.connect.base;
 import java.io.File;
 import java.io.IOException;
 import java.lang.reflect.Method;
+import java.net.MalformedURLException;
 import java.net.URL;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
@@ -30,20 +31,26 @@ import org.testng.ITestResult;
 import org.testng.Reporter;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 
 import com.fluke.connect.listner.Listner;
 import com.fluke.connect.prepoststeps.LoginApplication;
+import com.fluke.connect.utility.CommonUtils;
 import com.fluke.connect.utility.Configration;
 import com.fluke.connect.utility.ExcelReader;
 import com.fluke.connect.utility.ExtentManager;
 import com.fluke.connect.utility.GetDataProperties;
+import com.fluke.connect.utility.AppiumServer;
 import com.relevantcodes.extentreports.DisplayOrder;
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
+
+import io.appium.java_client.AppiumDriver;
+import io.appium.java_client.MobileElement;
 
 
 
@@ -63,17 +70,49 @@ public class TestBase {
 	public ExtentReports reo =ExtentManager.getInstance();
 	public static ExtentTest tst;
 	public WebDriverWait wait;
+	public static AppiumDriver<MobileElement> driver1;
+	public static String loadPropertyFile = "Android_Fluke.properties";
 	
 	/* static method to store the extent reports (Location of extent report). 
 	configuration of extent are set in ReportsCongig.xml file are loading hear */
 	
 	@BeforeSuite
-	public void initilization() {
+	public void initilization() throws IOException {
 		Calendar calendar = Calendar.getInstance();
 		SimpleDateFormat formater = new SimpleDateFormat("dd_MM_yyyy_hh_mm_ss");
 		extent = new ExtentReports(System.getProperty("user.dir")+"\\target\\surefire-reports\\html\\extent.html",true,DisplayOrder.OLDEST_FIRST);
 		//extent.loadConfig(new File( System.getProperty("user.dir") +"\\src\\test\\java\\com\\fluke\\connect\\utility\\ReportsConfig.xml"));
 	System.out.println("Before suite");
+	
+	if(driver==null){
+		
+		
+		
+		
+		
+		if(loadPropertyFile.startsWith("Android")){
+			
+		com.fluke.connect.utility.AppiumServer.start();
+			log.debug("Appium server started");
+			CommonUtils.loadAndroidConfProp(loadPropertyFile);
+			CommonUtils.setAndroidCapabilities();
+			driver = CommonUtils.getAndroidDriver();
+			
+		}else if(loadPropertyFile.startsWith("IOS")){
+			
+			
+			CommonUtils.loadIOSConfProp(loadPropertyFile);
+			CommonUtils.setIOSCapabilities();
+			driver = CommonUtils.getIOSDriver();
+			
+		}
+		
+		
+		
+		
+		
+	}
+	
 	}
 	
 	
@@ -236,10 +275,23 @@ else if (browser.equalsIgnoreCase("ie")) {
 		log.info("browser closed");		
 		
 	}
-	public WebElement waitForElement(WebDriver driver, WebElement element, long timeOutInSeconds) {
-		WebDriverWait wait = new WebDriverWait(driver, timeOutInSeconds);
-		wait.until(ExpectedConditions.elementToBeClickable(element));
-		return element;
+	
+	@AfterSuite
+	public void tearDown() throws InterruptedException{
+		
+		Thread.sleep(3000);
+		if(loadPropertyFile.startsWith("Android")){
+		driver.quit();
+	AppiumServer.stop();
+		log.debug("Appium server stopped");
+		}else{
+			
+			driver.quit();
+		}
+		
+		
 	}
+
+	
 }
 

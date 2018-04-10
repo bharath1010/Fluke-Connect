@@ -2,8 +2,11 @@ package com.fluke.connect.test_cases;
 
 import static org.testng.Assert.expectThrows;
 
+import java.util.function.Function;
+
 import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.os.WindowsUtils;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -24,7 +27,7 @@ public class MeasurementScreenTest extends TestBase{
 	MeasurementsPage measurment;
 	
 	 //public static final Logger log = Logger.getLogger( MeasurementScreenTest.class.getName());
-	//@Test(priority=0)
+	@Test(priority=0)
 	public void verifyMeasurements() {
 		
 		try {
@@ -54,7 +57,7 @@ public class MeasurementScreenTest extends TestBase{
 		
 		catch(Exception e)
 		{
-			captureScreen("");
+			String screen = captureScreen("");
 			test.log(LogStatus.FAIL,"MEASUREMENTS text no matched " , test.addScreenCapture(newFileName));
 			
 		}
@@ -67,19 +70,22 @@ public class MeasurementScreenTest extends TestBase{
 	
 	
 	@Test(priority=1)
-	public void deleteMeasurements() {
+	public void deleteMeasurements() throws InterruptedException {
 		int imagecount=0;
-		try {
+		
+		
+	
 		test = extent.startTest("Delete Measurments");
 		test.log(LogStatus.INFO, "Open  connect.fluke.com" );
-	    wait.until(ExpectedConditions.elementToBeClickable(By.linkText("List")));
+	//	wait1.until(ExpectedConditions.elementToBeClickable(By.linkText("")))	;
+		wait.until(ExpectedConditions.elementToBeClickable(By.linkText("List")));
 	    header=  PageFactory.initElements(driver, TopHeadersPage.class);
 		measurment=  PageFactory.initElements(driver, MeasurementsPage.class);
 		header.clickMeasurements();
 		test.log(LogStatus.INFO, "Measurements clicked" );
 		 imagecount =measurment.getallimage().size();
-		 log("total imgae before deletion"+ imagecount );
-		if(measurment.getallimage().size()==0) {
+		 log("total imgae before deletion is "+" "+ imagecount );
+		if(imagecount==0) {
 			
 			//logs
 			test.log(LogStatus.INFO, "No image present" );
@@ -90,50 +96,54 @@ public class MeasurementScreenTest extends TestBase{
 			
 			System.out.println("total number of image present" + measurment.getallimage().size());
 			measurment.getallcheckbox().get(0).click();
-			measurment.clickDeleteButton();
+	
+            measurment.clickDeleteButton();
 			test.log(LogStatus.INFO, "delete button cliked" );
 			measurment.okButton();
 			test.log(LogStatus.INFO, "Ok delete button clicked" );
+			Thread.sleep(2000);
+			int imagecountafterdelete =  measurment.getallimage().size();
+			Assert.assertEquals(imagecountafterdelete, imagecount -1 );
+			log("image remaining after deletion 1 image   "  +imagecountafterdelete);
 			
 		}
 		
-         if(measurment.getallimage().size()==0) {
+		imagecount =measurment.getallimage().size();
+		
+		 if(imagecount >= 2) {
+				
+			 log("total number of image present" + imagecount );
+	 			measurment.getallcheckbox().get(0).click();
+	 			measurment.getallcheckbox().get(1).click();
+	 			measurment.clickDeleteButton();
+	 			measurment.okButton();
+	 			Thread.sleep(2000);
+	 			test.log(LogStatus.INFO, "two image deleted" );
+	 			int imagecountafterdelete=measurment.getallimage().size();
+				Assert.assertEquals(imagecountafterdelete, imagecount -  2);
+				log("image remaining after deletion  "+ " " + imagecountafterdelete);
+				
+	        	 
+				
+			}
 			
-			//logs
-        	 test.log(LogStatus.INFO, "No image present now" );
+	         else {
+	 			
+	        	 log("upload more images ");
+	        	 test.log(LogStatus.INFO, "Please upload more image" );
+	 			
+	 		}
+	         
+		
+		
 			
-		}
-		
-         else {
- 			
- 			System.out.println("total number of image present" + measurment.getallimage().size());
- 			measurment.getallcheckbox().get(1).click();
- 			measurment.getallcheckbox().get(2).click();
- 			measurment.clickDeleteButton();
- 			measurment.okButton();
- 			
- 			test.log(LogStatus.INFO, "two image deleted" );
- 			
- 		}
-         
-		}
-		
-		catch(Exception e)
-		{
-			captureScreen("");
-			log("found exception  " +e );
-			test.log(LogStatus.FAIL, e.toString() , test.addScreenCapture(newFileName));
 			
-		}
+			
+			
+		    
+        
 		
-		
-		int imagecountafterdelete=measurment.getallimage().size();
-		Assert.assertEquals(imagecountafterdelete, imagecount-3);
-		log("image remaining after deletion  "  +imagecountafterdelete);
-		
-		 
-         
-         
+	    
   }
 	
 	
