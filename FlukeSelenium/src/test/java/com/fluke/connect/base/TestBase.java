@@ -43,23 +43,22 @@ import com.fluke.connect.utility.Configration;
 import com.fluke.connect.utility.ExcelReader;
 import com.fluke.connect.utility.ExtentManager;
 import com.fluke.connect.utility.GetDataProperties;
+import com.fluke.connect.exception.SeleniumException;
 import com.fluke.connect.utility.AppiumServer;
 import com.relevantcodes.extentreports.DisplayOrder;
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
+import com.fluke.connect.utility.DetailedLogs;
 
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
 
-
-
-
 @SuppressWarnings("unused")
 public class TestBase {
-	
+
 	public static final Logger log = Logger.getLogger(TestBase.class.getName());
-	
+
 	public static WebDriver driver;
 	ExcelReader excel;
 	Listner lis;
@@ -67,204 +66,233 @@ public class TestBase {
 	public static ExtentTest test;
 	public ITestResult result;
 	public static String newFileName;
-	public ExtentReports reo =ExtentManager.getInstance();
+	public ExtentReports reo = ExtentManager.getInstance();
 	public static ExtentTest tst;
+	public DetailedLogs AppLogs = new DetailedLogs();
+
 	public WebDriverWait wait;
 	public static AppiumDriver<MobileElement> driver1;
 	public static String loadPropertyFile = "Android_Fluke.properties";
-	
-	/* static method to store the extent reports (Location of extent report). 
-	configuration of extent are set in ReportsCongig.xml file are loading hear */
-	
+	public static int PAGE_LOADING_TIMEOUT_MILLIS = 100;
+	public static int SET_SCRIPT_TIMEOUT_MILLIS = 20;
+	public static int WEB_DRIVER_WAIT = 20;
+	public static int IMPLICIT_TIME_OUT = 20;
+	public static final int CLICK_TIMEOUT_SECONDS = 5;
+
+	/*
+	 * initilization the Mobile Type
+	 * 
+	 * static method to store the extent reports (Location of extent report).
+	 * 
+	 * configuration of extent are set in ReportsCongig.xml file are loading hear
+	 */
+
 	@BeforeSuite
 	public void initilization() throws IOException {
 		Calendar calendar = Calendar.getInstance();
 		SimpleDateFormat formater = new SimpleDateFormat("dd_MM_yyyy_hh_mm_ss");
-		extent = new ExtentReports(System.getProperty("user.dir")+"\\target\\surefire-reports\\html\\extent.html",true,DisplayOrder.OLDEST_FIRST);
-		//extent.loadConfig(new File( System.getProperty("user.dir") +"\\src\\test\\java\\com\\fluke\\connect\\utility\\ReportsConfig.xml"));
-	System.out.println("Before suite");
-	
-	if(driver==null){
-		
-		
-		
-		
-		
-		if(loadPropertyFile.startsWith("Android")){
-			
-		com.fluke.connect.utility.AppiumServer.start();
-			log.debug("Appium server started");
-			CommonUtils.loadAndroidConfProp(loadPropertyFile);
-			CommonUtils.setAndroidCapabilities();
-			driver = CommonUtils.getAndroidDriver();
-			
-		}else if(loadPropertyFile.startsWith("IOS")){
-			
-			
-			CommonUtils.loadIOSConfProp(loadPropertyFile);
-			CommonUtils.setIOSCapabilities();
-			driver = CommonUtils.getIOSDriver();
-			
+		extent = new ExtentReports(System.getProperty("user.dir") + "\\target\\surefire-reports\\html\\extent.html",
+				true, DisplayOrder.OLDEST_FIRST);
+		extent.loadConfig(new File(
+				System.getProperty("user.dir") + "\\src\\test\\java\\com\\fluke\\connect\\utility\\ReportsConfig.xml"));
+		System.out.println("Before suite");
+		if (driver == null) {
+
+			if (loadPropertyFile.startsWith("Android")) {
+
+				com.fluke.connect.utility.AppiumServer.start();
+				log.debug("Appium server started");
+				CommonUtils.loadAndroidConfProp(loadPropertyFile);
+				CommonUtils.setAndroidCapabilities();
+				driver = CommonUtils.getAndroidDriver();
+
+			} else if (loadPropertyFile.startsWith("IOS")) {
+
+				CommonUtils.loadIOSConfProp(loadPropertyFile);
+				CommonUtils.setIOSCapabilities();
+				driver = CommonUtils.getIOSDriver();
+
+			}
+
 		}
-		
-		
-		
-		
-		
+
 	}
-	
-	}
-	
-	
-	public void init(){
-		
+
+	public void init() throws SeleniumException {
 		selectBrowser(GetDataProperties.getConfData("browser"));
 		getUrl(GetDataProperties.getConfData("url"));
-		String log4jConfPath ="log4j.properties";
+		String log4jConfPath = "log4j.properties";
 		PropertyConfigurator.configure(log4jConfPath);
 	}
-	
+
+	/**
+	 * Purpose : This method starts browser on available node & connect wih HUB
+	 * 
+	 * @param hubAddress
+	 * @throws SeleniumException
+	 */
 	@SuppressWarnings("deprecation")
-	public  void selectBrowser(String browser){
-		
-if (browser.equalsIgnoreCase("chrome")){
-			
-			
-	System.setProperty("webdriver.chrom.driver", System.getProperty("user.dir")+"\\src\\test\\resources\\drivers\\" +"chromedriver.exe");		
-	//	System.setProperty("webdriver.chrome.driver", GetDataProperties .getData("browserdriver_path") +  "\\chromedriver.exe");
-		driver= new ChromeDriver();
-		 driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-			driver.manage().timeouts().pageLoadTimeout(100, TimeUnit.SECONDS);
-			driver.manage().timeouts().setScriptTimeout(20, TimeUnit.SECONDS);
-			driver.manage().window().maximize();
-			wait= new WebDriverWait(driver, 60);
-	
-	     }
-		else if (browser.equalsIgnoreCase("firefox")) {
-			
-			System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir") +"\\src\\test\\resources\\drivers\\"+"geckodriver.exe");
-		//	System.setProperty("webdriver.gecko.driver", GetDataProperties.getData("browserdriver_path") + "\\geckodriver.exe");
+	public void selectBrowser(String browser) throws SeleniumException {
+
+		if (browser.equalsIgnoreCase("chrome")) {
+			System.setProperty("webdriver.chrom.driver",
+					System.getProperty("user.dir") + "\\src\\test\\resources\\drivers\\" + "chromedriver.exe");
+
+		} else if (browser.equalsIgnoreCase("firefox")) {
+			System.setProperty("webdriver.gecko.driver",
+					System.getProperty("user.dir") + "\\src\\test\\resources\\drivers\\" + "geckodriver.exe");
 			DesiredCapabilities capabilities = new DesiredCapabilities();
-			capabilities.setCapability("acceptInsecureCerts",true);
+			capabilities.setCapability("acceptInsecureCerts", true);
 			driver = new FirefoxDriver(capabilities);
-			 
-			 //driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-				driver.manage().timeouts().pageLoadTimeout(100, TimeUnit.SECONDS);
-				driver.manage().timeouts().setScriptTimeout(20, TimeUnit.SECONDS);
-				driver.manage().window().maximize();
-				wait= new WebDriverWait(driver, 20);
-		 }
-
-else if (browser.equalsIgnoreCase("ie")) {
-			
-			
-	System.setProperty("webdriver.ie.driver", System.getProperty("user.dir") +"\\src\\test\\resources\\drivers\\"+"IEDriverServer.exe");
-	//System.setProperty("webdriver.ie.driver", GetDataProperties.getData("browserdriver_path") + "\\IEDriverServer.exe");
-			
-			//DesiredCapabilities capabilities = new DesiredCapabilities();
-			//capabilities.setCapability("acceptInsecureCerts",true);
+		} else if (browser.equalsIgnoreCase("ie")) {
+			System.setProperty("webdriver.ie.driver",
+					System.getProperty("user.dir") + "\\src\\test\\resources\\drivers\\" + "IEDriverServer.exe");
 			driver = new InternetExplorerDriver();
-			 
-			 driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-				driver.manage().timeouts().pageLoadTimeout(100, TimeUnit.SECONDS);
-				driver.manage().timeouts().setScriptTimeout(20, TimeUnit.SECONDS);
-		 }
-			
-			
+		}
+		driver.manage().timeouts().pageLoadTimeout(PAGE_LOADING_TIMEOUT_MILLIS, TimeUnit.SECONDS);
+		driver.manage().timeouts().setScriptTimeout(SET_SCRIPT_TIMEOUT_MILLIS, TimeUnit.SECONDS);
+		driver.manage().window().maximize();
+		wait = new WebDriverWait(driver, WEB_DRIVER_WAIT);
 	}
 
-		 
-		 
-		 
-		
+	/**
+	 * Purpose : this method is to get URL for property file
+	 */
 
-	public void getUrl(String url){
-	driver.get(url);
-	log.info("Open ");
+	public void getUrl(String url) {
+		driver.get(url);
+		log.info("Open ");
 
-	driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(IMPLICIT_TIME_OUT, TimeUnit.SECONDS);
 	}
 
+	/**
+	 * Purpose : This method reads data from TestDate file for respective test case
+	 * 
+	 * @param excelName,sheetName
+	 * @return data
+	 */
 	public String[][] getData(String excelName, String sheetName) {
-		String path = System.getProperty("user.dir") + "\\src\\resources\\testData\\"+excelName;
+		String path = System.getProperty("user.dir") + "\\src\\resources\\testData\\" + excelName;
 		excel = new ExcelReader(path);
-		String[][] data = excel.getDataFromSheet(sheetName, excelName);  
+		String[][] data = excel.getDataFromSheet(sheetName, excelName);
 		return data;
 	}
- 
+
+	/**
+	 * Purpose : this method is to Capture screenshots
+	 */
 	public String captureScreen(String fileName) {
 		if (fileName == "") {
-		fileName = "blank";
-	}
+			fileName = "blank";
+		}
 		File destFile = null;
 		Calendar calendar = Calendar.getInstance();
 		SimpleDateFormat formater = new SimpleDateFormat("dd_MM_yyyy_hh_mm_ss");
 		File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-	try {
-		String reportDirectory = new File(System.getProperty("user.dir"))+ "\\target\\surefire-reports\\html\\";
+		try {
+			String reportDirectory = new File(System.getProperty("user.dir")) + "\\target\\surefire-reports\\html\\";
 
-		destFile = new File((String) reportDirectory + fileName + "_" + formater.format(calendar.getTime()) + ".png");
-		newFileName = fileName + "_" + formater.format(calendar.getTime()) + ".png";
-		FileUtils.copyFile(scrFile, destFile);
-		Reporter.log("<a href='" + destFile + "'> <img src='" +  "_" + fileName +formater.format(calendar.getTime()) + ".png" + "' height='100' width='100'/> </a>");
+			destFile = new File(
+					(String) reportDirectory + fileName + "_" + formater.format(calendar.getTime()) + ".png");
+			newFileName = fileName + "_" + formater.format(calendar.getTime()) + ".png";
+			FileUtils.copyFile(scrFile, destFile);
+			Reporter.log("<a href='" + destFile + "'> <img src='" + "_" + fileName + formater.format(calendar.getTime())
+					+ ".png" + "' height='100' width='100'/> </a>");
 
-	} 
-	
-	catch (IOException e) {
-		e.printStackTrace();
+		}
+
+		catch (IOException e) {
+			e.printStackTrace();
+		}
+
+		return destFile.toString();
 	}
-	
-	return destFile.toString();
-}
+
+	/**
+	 * Purpose : this method is to irate
+	 */
 	public Iterator<String> getAllWindows() {
 		Set<String> windows = driver.getWindowHandles();
 		Iterator<String> itr = windows.iterator();
 		return itr;
 	}
+
+	/**
+	 * Purpose : this method is to create logs for reportNG report
+	 */
 	public void log(String data) {
 		log.info(data);
 		Reporter.log(data);
 	}
 
-	public void getresult(ITestResult result ) {
+	public void getresult(ITestResult result) {
+		/**
+		 * Purpose : Called when the test-method execution Success
+		 * 
+		 * @param result
+		 */
 		if (result.getStatus() == ITestResult.SUCCESS) {
-			test.log(LogStatus.PASS, result.getName() + " test is pass" );
+			test.log(LogStatus.PASS, result.getName() + " test is pass");
 			String screen = captureScreen("");
 			test.log(LogStatus.PASS, test.addScreenCapture(newFileName));
-
+			/**
+			 * Purpose : Called when the test-method execution SKIPS
+			 * 
+			 * @param SKIP
+			 */
 		} else if (result.getStatus() == ITestResult.SKIP) {
-			test.log(LogStatus.SKIP, result.getName() + " test is skipped and skip reason is:-" + result.getThrowable());
+			test.log(LogStatus.SKIP,
+					result.getName() + " test is skipped and skip reason is:-" + result.getThrowable());
 			String screen = captureScreen("");
 			test.log(LogStatus.SKIP, test.addScreenCapture(newFileName));
+			/**
+			 * Purpose : Called when the test-method execution FAIL
+			 * 
+			 * @param FAIL
+			 */
 		} else if (result.getStatus() == ITestResult.FAILURE) {
 			test.log(LogStatus.ERROR, result.getName() + " test is failed" + result.getThrowable());
 			String screen = captureScreen("");
 			test.log(LogStatus.FAIL, test.addScreenCapture(newFileName));
+			/**
+			 * Purpose : Called when the test-method execution STARTED
+			 * 
+			 * @param STARTED
+			 */
 		} else if (result.getStatus() == ITestResult.STARTED) {
-			test.log(LogStatus.INFO, result.getInstanceName() +  "   test is started" + result.getThrowable());
-			
+			test.log(LogStatus.INFO, result.getInstanceName() + "   test is started" + result.getThrowable());
+
 		}
-		
+		/**
+		 * Purpose : This method flush the report to extent report
+		 */
 		extent.endTest(test);
 		extent.flush();
-		
+
 	}
-	
-	
+
+	/**
+	 * Purpose : This method quit driver once test class execution is complete
+	 */
 	@BeforeMethod
-	public void setUp(){
+	public void setUp() throws SeleniumException {
 		WindowsUtils.killByName("chromedriver.exe");
 		init();
-		log("Open https://connect.fluke.com/en/login\r\n");
-		LoginApplication.login(GetDataProperties.getConfData("username"),GetDataProperties.getConfData("password") );
+		LoginApplication.login(GetDataProperties.getConfData("username"), GetDataProperties.getConfData("password"));
 	}
-	
+
+	/**
+	 * Purpose : This method get the results
+	 */
 	@AfterMethod()
 	public void afterMethod(ITestResult result) {
 		getresult(result);
 	}
 
-
+	/**
+	 * Purpose : This method close/quit driver once test class execution is complete
+	 */
 	@AfterClass(alwaysRun = true)
 	public void endTest() {
 		closeBrowser();
@@ -272,26 +300,39 @@ else if (browser.equalsIgnoreCase("ie")) {
 
 	public void closeBrowser() {
 		driver.quit();
-		log.info("browser closed");		
-		
+		log.info("browser closed");
+
 	}
-	
+
+	/**
+	 * Purpose : This method performs tearDown after a test case execution & takes
+	 * browser screen shot in case of test fail
+	 * 
+	 * @param result
+	 * @throws InterruptedException
+	 */
 	@AfterSuite
-	public void tearDown() throws InterruptedException{
-		
+	public void tearDown() throws InterruptedException {
+
 		Thread.sleep(3000);
-		if(loadPropertyFile.startsWith("Android")){
-		driver.quit();
-	AppiumServer.stop();
-		log.debug("Appium server stopped");
-		}else{
-			
+		if (loadPropertyFile.startsWith("Android")) {
+			driver.quit();
+			AppiumServer.stop();
+			log.debug("Appium server stopped");
+		} else {
+
 			driver.quit();
 		}
-		
-		
+
 	}
 
-	
 }
-
+/**
+ * java
+ * -Dwebdriver.chrome.driver="C:\Users\DELL\eclipse-workspace\AutomationFramework\src\test\resources\drivers\chromedriver.exe"
+ * -jar selenium-server-standalone-3.7.0.jar -role node -hub
+ * http://localhost:4444/grid/register -port 5555 -browser browserName=chrome
+ * -maxSession 1 java -jar selenium-server-standalone-2.47.1.jar -role node -hub
+ * http://localhost:4444/grid/register -port 5556 -browser browserName=firefox
+ * -maxSession 1 java -jar Appium 4.1.2.jar
+ */

@@ -1,9 +1,10 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <groupId>com.fluke.connect</groupId>
-  <artifactId>FlukeSelenium</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
-  <dependencies>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.fluke.connect</groupId>
+	<artifactId>FlukeSelenium</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<dependencies>
 		<dependency>
 			<groupId>org.apache.maven.plugins</groupId>
 			<artifactId>maven-compiler-plugin</artifactId>
@@ -14,7 +15,7 @@
 		<dependency>
 			<groupId>io.appium</groupId>
 			<artifactId>java-client</artifactId>
-			<version>4.1.2</version>
+			<version>5.0.4</version>
 		</dependency>
 
 		<dependency>
@@ -28,11 +29,11 @@
 			<artifactId>commons-email</artifactId>
 			<version>1.5</version>
 		</dependency>
-<dependency>
-      <groupId>com.google.guava</groupId>
-      <artifactId>guava</artifactId>
-      <version>21.0</version>
-</dependency>
+		<dependency>
+			<groupId>com.google.guava</groupId>
+			<artifactId>guava</artifactId>
+			<version>21.0</version>
+		</dependency>
 		<dependency>
 			<groupId>org.apache.poi</groupId>
 			<artifactId>poi</artifactId>
@@ -148,7 +149,7 @@
 
 						<configuration>
 							<!-- From Email address -->
-						<!-- <from>pramod.sapizon@gmail.com</from>  -->	
+							<!-- <from>pramod.sapizon@gmail.com</from> -->
 
 							<!-- Email subject -->
 							<subject>Test Automation Report</subject>
@@ -164,8 +165,8 @@
 							<mailAltConfig>true</mailAltConfig>
 
 							<!-- Email Authentication(USername and Password) -->
-						<!-- <mailuser>pramod.sapizon@gmail.com</mailuser>  -->	
-						<!--	<mailpassword>r00tr00t</mailpassword> -->
+							<!-- <mailuser>pramod.sapizon@gmail.com</mailuser> -->
+							<!-- <mailpassword>r00tr00t</mailpassword> -->
 
 							<receivers>
 								<!-- To Email address -->
@@ -175,7 +176,7 @@
 							<fileSets>
 								<fileSet>
 									<!-- Report directory Path -->
-								<!--  	<directory>C:\Users\DELL\Documents\GitHub\Sapizon\target\surefire-reports\html</directory> -->
+									<!-- <directory>C:\Users\DELL\Documents\GitHub\Sapizon\target\surefire-reports\html</directory> -->
 									<includes>
 										<!-- Report file name -->
 										<include>extent.html</include>
@@ -202,5 +203,5 @@
 
 	</build>
 
-  
+
 </project>

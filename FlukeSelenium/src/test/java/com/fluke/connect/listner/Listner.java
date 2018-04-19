@@ -13,49 +13,45 @@ import org.testng.ITestListener;
 import org.testng.ITestResult;
 import org.testng.Reporter;
 
+import com.fluke.connect.base.TestBase;
 import com.fluke.connect.utility.MonitoringMail;
 import com.fluke.connect.utility.TestConfig;
 
-
 @SuppressWarnings("unused")
-public class Listner extends com.fluke.connect.base.TestBase implements ITestListener,ISuiteListener{
-
-	
+public class Listner extends TestBase implements ITestListener, ISuiteListener {
 
 	public void onTestStart(ITestResult result) {
-		
-	}		
-	
+
+	}
 
 	public void onTestSuccess(ITestResult result) {
-	
+
 	}
 
 	public void onTestFailure(ITestResult result) {
-		}
+	}
 
 	public void onTestSkipped(ITestResult result) {
-	
+
 	}
 
 	public void onTestFailedButWithinSuccessPercentage(ITestResult result) {
 		// TODO Auto-generated method stub
-		
+
 	}
 
 	public void onStart(ITestContext context) {
 		// TODO Auto-generated method stub
-		
+
 	}
 
 	public void onFinish(ITestContext context) {
-		Reporter.log("Test is finished:" + context.getName());		
+		Reporter.log("Test is finished:" + context.getName());
 	}
-
 
 	public void onFinish(ISuite arg0) {
 		MonitoringMail mail = new MonitoringMail();
-		 String messageBody = null;
+		String messageBody = null;
 		try {
 			messageBody = "http://" + InetAddress.getLocalHost().getHostAddress()
 					+ ":8080/job/DataDrivenLiveProject/Extent_Reports/";
@@ -63,7 +59,7 @@ public class Listner extends com.fluke.connect.base.TestBase implements ITestLis
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-	
+
 		try {
 			mail.sendMail(TestConfig.server, TestConfig.from, TestConfig.to, TestConfig.subject, messageBody);
 		} catch (AddressException e) {
@@ -74,14 +70,11 @@ public class Listner extends com.fluke.connect.base.TestBase implements ITestLis
 			e.printStackTrace();
 		}
 
-		
 	}
-	
-
 
 	public void onStart(ISuite arg0) {
 		// TODO Auto-generated method stub
-		
+
 	}
 
 }

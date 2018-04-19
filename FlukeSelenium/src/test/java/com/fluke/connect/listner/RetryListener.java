@@ -14,32 +14,25 @@ import org.testng.ISuite;
 import org.testng.ISuiteListener;
 import org.testng.annotations.ITestAnnotation;
 
-
 @SuppressWarnings("unused")
-public class RetryListener implements IAnnotationTransformer{
-	 
+public class RetryListener implements IAnnotationTransformer {
+
 	public String messageBody;
-	
+
 	@SuppressWarnings("rawtypes")
 	public void transform(ITestAnnotation arg0, Class arg1, Constructor arg2, Method arg3) {
-		
+
 		IRetryAnalyzer retry = arg0.getRetryAnalyzer();
 
-		if (retry == null)	{
+		if (retry == null) {
 			arg0.setRetryAnalyzer(Retry.class);
 		}
-		
+
 	}
 
 	public void onStart(ISuite suite) {
 		// TODO Auto-generated method stub
-		
+
 	}
 
-	
-		
-	}
-
-
-
-
+}

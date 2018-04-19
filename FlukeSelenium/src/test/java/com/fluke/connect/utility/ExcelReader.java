@@ -11,6 +11,9 @@ import org.apache.poi.xssf.usermodel.XSSFRow;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
+/**
+ * ExcelReader.java contains method to read data from excel file
+ */
 public class ExcelReader {
 	
 	public FileOutputStream fileOut = null;
@@ -21,9 +24,11 @@ public class ExcelReader {
 	public XSSFRow row;
 	public XSSFCell cell;
 
-	//Users/bsingh5/git/POMWithPageFactoryFramework
-	//src/main/java/com/test/automation/uiAutomation/testData.xls;
 	
+	/**
+	 * Users/bsingh5/git/POMWithPageFactoryFramework
+	 * src/main/java/com/test/automation/uiAutomation/testData.xls;
+	 */
 	public ExcelReader(String path) {
 		this.path = path;
 		try {

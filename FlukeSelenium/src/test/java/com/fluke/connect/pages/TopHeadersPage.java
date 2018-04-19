@@ -6,28 +6,20 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 
 public class TopHeadersPage {
-	
-	
-WebDriver driver;
-	
+
+	WebDriver driver;
+
 	public TopHeadersPage(WebDriver driver) {
-		this.driver =driver;
-		
+		this.driver = driver;
+
 	}
 
-	
-	@FindBy(how=How.XPATH, using="//div//a[text()='Measurements']")
+	@FindBy(how = How.XPATH, using = "//div//a[text()='Measurements']")
 	WebElement measurements;
-	
-	
+
 	public void clickMeasurements() {
-		
+
 		measurements.click();
 	}
-	
-	
-	
-	
-	
 
 }

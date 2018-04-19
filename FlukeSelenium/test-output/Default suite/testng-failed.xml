@@ -3,15 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.fluke.connect.test_cases.MeasurementScreenTest">
+      <class name="com.fluke.screens.rough.SampleTest">
         <methods>
-          <include name="endTest"/>
-          <include name="initilization"/>
-          <include name="deleteMeasurements"/>
-          <include name="setUp"/>
-          <include name="afterMethod"/>
+          <include name="startService"/>
+          <include name="test"/>
+          <include name="stopService"/>
         </methods>
-      </class> <!-- com.fluke.connect.test_cases.MeasurementScreenTest -->
+      </class> <!-- com.fluke.screens.rough.SampleTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

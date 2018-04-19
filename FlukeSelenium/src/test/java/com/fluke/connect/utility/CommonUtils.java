@@ -59,49 +59,42 @@ public class CommonUtils {
 		APPIUM_PORT = prop.getProperty("appium.server.port");
 
 	}
-	
+
 	// loadIOSConfProp
-	
-	public static void loadIOSConfProp(String propertyFileName) throws IOException
-	 {
-		FileInputStream fis = new FileInputStream(System.getProperty("user.dir")+"/src/test/resources/properties/"+propertyFileName);
+
+	public static void loadIOSConfProp(String propertyFileName) throws IOException {
+		FileInputStream fis = new FileInputStream(
+				System.getProperty("user.dir") + "/src/test/resources/properties/" + propertyFileName);
 		prop.load(fis);
-		
-		EXPLICIT_WAIT_TIME = Integer
-				.parseInt(prop.getProperty("explicit.wait"));
-		IMPLICIT_WAIT_TIME = Integer
-				.parseInt(prop.getProperty("implicit.wait"));
-		//APPLICATION_NAME = prop.getProperty("application.path");
+
+		EXPLICIT_WAIT_TIME = Integer.parseInt(prop.getProperty("explicit.wait"));
+		IMPLICIT_WAIT_TIME = Integer.parseInt(prop.getProperty("implicit.wait"));
+		// APPLICATION_NAME = prop.getProperty("application.path");
 		UDID = prop.getProperty("udid");
 		APP = prop.getProperty("application.app");
 		APPIUM_PORT = prop.getProperty("appium.server.port");
-		AUTOMATION_INSTRUMENTATION=prop.getProperty("automation.instumentation");
-		DEVICE_NAME=prop.getProperty("device.name");
-		BROWSER_NAME=prop.getProperty("browser.name");
-		PLATFORM_NAME=prop.getProperty("platform.name");
-		PLATFORM_VERSION=prop.getProperty("platform.version");
+		AUTOMATION_INSTRUMENTATION = prop.getProperty("automation.instumentation");
+		DEVICE_NAME = prop.getProperty("device.name");
+		BROWSER_NAME = prop.getProperty("browser.name");
+		PLATFORM_NAME = prop.getProperty("platform.name");
+		PLATFORM_VERSION = prop.getProperty("platform.version");
 		BUNDLE_ID = prop.getProperty("bundle.id");
 
-}
-	public static void setIOSCapabilities() {
-		capabilities.setCapability(MobileCapabilityType.BROWSER_NAME,
-				CommonUtils.BROWSER_NAME);
-		capabilities.setCapability(MobileCapabilityType.PLATFORM_VERSION,
-				CommonUtils.PLATFORM_VERSION);
-		capabilities.setCapability(MobileCapabilityType.PLATFORM_NAME,
-				CommonUtils.PLATFORM_NAME);
-		capabilities.setCapability(MobileCapabilityType.DEVICE_NAME,
-				CommonUtils.DEVICE_NAME);
-		capabilities.setCapability(MobileCapabilityType.AUTOMATION_NAME,
-				CommonUtils.AUTOMATION_INSTRUMENTATION);
-		//capabilities.setCapability(MobileCapabilityType.APP, CommonUtils.APPLICATION_NAME);
-	
-		capabilities.setCapability(IOSMobileCapabilityType.BUNDLE_ID,
-				CommonUtils.BUNDLE_ID);
-		capabilities.setCapability(MobileCapabilityType.UDID,
-				CommonUtils.UDID);
 	}
-	
+
+	public static void setIOSCapabilities() {
+		capabilities.setCapability(MobileCapabilityType.BROWSER_NAME, CommonUtils.BROWSER_NAME);
+		capabilities.setCapability(MobileCapabilityType.PLATFORM_VERSION, CommonUtils.PLATFORM_VERSION);
+		capabilities.setCapability(MobileCapabilityType.PLATFORM_NAME, CommonUtils.PLATFORM_NAME);
+		capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, CommonUtils.DEVICE_NAME);
+		capabilities.setCapability(MobileCapabilityType.AUTOMATION_NAME, CommonUtils.AUTOMATION_INSTRUMENTATION);
+		// capabilities.setCapability(MobileCapabilityType.APP,
+		// CommonUtils.APPLICATION_NAME);
+
+		capabilities.setCapability(IOSMobileCapabilityType.BUNDLE_ID, CommonUtils.BUNDLE_ID);
+		capabilities.setCapability(MobileCapabilityType.UDID, CommonUtils.UDID);
+	}
+
 	// setAndroidCap
 
 	public static void setAndroidCapabilities() {
@@ -115,10 +108,8 @@ public class CommonUtils {
 		capabilities.setCapability(AndroidMobileCapabilityType.APP_ACTIVITY, APP_ACTIVITY);
 
 	}
-	
+
 	// setIOSCap
-	
-	
 
 	// getAndroidDriver
 

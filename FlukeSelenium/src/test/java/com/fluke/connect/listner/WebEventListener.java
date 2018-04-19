@@ -7,23 +7,20 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.events.WebDriverEventListener;
 import org.testng.Reporter;
 
-
-
-public class WebEventListener extends com.fluke.connect.base.TestBase implements WebDriverEventListener{
+public class WebEventListener extends com.fluke.connect.base.TestBase implements WebDriverEventListener {
 
 	public static final Logger log = Logger.getLogger(WebEventListener.class.getName());
 
 	public void beforeNavigateTo(String url, WebDriver driver) {
-		//log("Before navigating to: '" + url + "'");
+		// log("Before navigating to: '" + url + "'");
 	}
 
 	public void afterNavigateTo(String url, WebDriver driver) {
-		//log("Navigated to:'" + url + "'");
+		// log("Navigated to:'" + url + "'");
 	}
 
 	public void beforeChangeValueOf(WebElement element, WebDriver driver) {
-		log("Value of the:" + element.toString()
-				+ " before any changes made");
+		log("Value of the:" + element.toString() + " before any changes made");
 	}
 
 	public void afterChangeValueOf(WebElement element, WebDriver driver) {
@@ -31,11 +28,11 @@ public class WebEventListener extends com.fluke.connect.base.TestBase implements
 	}
 
 	public void beforeClickOn(WebElement element, WebDriver driver) {
-		//log("Trying to click on: " + element.toString());
+		// log("Trying to click on: " + element.toString());
 	}
 
 	public void afterClickOn(WebElement element, WebDriver driver) {
-		
+
 		log("Clicked on: " + element.toString());
 	}
 
@@ -57,11 +54,11 @@ public class WebEventListener extends com.fluke.connect.base.TestBase implements
 
 	public void onException(Throwable error, WebDriver driver) {
 		log("Exception occured: " + error);
-		Reporter.log("Exception occured:" , false);
+		Reporter.log("Exception occured:", false);
 	}
 
 	public void beforeFindBy(By by, WebElement element, WebDriver driver) {
-		//log("Trying to find Element By : " + by.toString());
+		// log("Trying to find Element By : " + by.toString());
 	}
 
 	public void afterFindBy(By by, WebElement element, WebDriver driver) {
@@ -83,49 +80,47 @@ public class WebEventListener extends com.fluke.connect.base.TestBase implements
 
 	public void beforeAlertAccept(WebDriver driver) {
 		// TODO Auto-generated method stub
-		
+
 	}
 
 	public void afterAlertAccept(WebDriver driver) {
 		// TODO Auto-generated method stub
-		
+
 	}
 
 	public void afterAlertDismiss(WebDriver driver) {
 		// TODO Auto-generated method stub
-		
+
 	}
 
 	public void beforeAlertDismiss(WebDriver driver) {
 		// TODO Auto-generated method stub
-		
+
 	}
 
 	public void beforeNavigateRefresh(WebDriver driver) {
 		// TODO Auto-generated method stub
-		
+
 	}
 
 	public void afterNavigateRefresh(WebDriver driver) {
 		// TODO Auto-generated method stub
-		
+
 	}
 
 	public void beforeChangeValueOf(WebElement element, WebDriver driver, CharSequence[] keysToSend) {
 		// TODO Auto-generated method stub
-		
+
 	}
 
 	public void afterChangeValueOf(WebElement element, WebDriver driver, CharSequence[] keysToSend) {
 		// TODO Auto-generated method stub
-		
+
 	}
-	
-	public void log(String data){
+
+	public void log(String data) {
 		log.info(data);
 		Reporter.log(data);
 	}
-
-
 
 }
