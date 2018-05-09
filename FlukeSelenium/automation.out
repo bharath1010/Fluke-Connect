@@ -261,3 +261,583 @@ Session ID: c53ab44b0f99ea6e78eaf609c4f237e7
 2018-04-09 22:58:14 INFO  TestBase:186 - image remaining after deletion 1 image   3
 2018-04-09 22:58:14 INFO  TestBase:186 - total number of image present3
 2018-04-09 22:58:15 INFO  TestBase:236 - browser closed
+2018-04-27 13:52:07 INFO  SeleniumTestBase:202 - Open url
+2018-04-27 13:52:19 INFO  SeleniumTestBase:202 - waiting to load page 
+2018-04-27 13:52:24 ERROR DetailedLogs:37 - Utitlity -> setupLogger()
+java.io.FileNotFoundException: D:\FlukeFramework\src\test\java\com\config\log4j.properties (The system cannot find the path specified)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(Unknown Source)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at com.fluke.connect.utility.DetailedLogs.<init>(DetailedLogs.java:33)
+	at com.fluke.connect.base.SeleniumTestBase.<init>(SeleniumTestBase.java:73)
+	at com.fluke.connect.pages.MeasurementsPage.<init>(MeasurementsPage.java:17)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.support.PageFactory.instantiatePage(PageFactory.java:129)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:64)
+	at com.fluke.connect.test_cases.MeasurementScreenTest.verifyMeasurements(MeasurementScreenTest.java:48)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+2018-04-27 13:52:24 INFO  SeleniumTestBase:202 - total number of images are present2
+2018-04-27 13:52:35 INFO  SeleniumTestBase:160 - Open 
+2018-04-27 13:52:35 INFO  SeleniumTestBase:202 - Open url
+2018-04-27 13:52:51 ERROR DetailedLogs:37 - Utitlity -> setupLogger()
+java.io.FileNotFoundException: D:\FlukeFramework\src\test\java\com\config\log4j.properties (The system cannot find the path specified)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(Unknown Source)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at com.fluke.connect.utility.DetailedLogs.<init>(DetailedLogs.java:33)
+	at com.fluke.connect.base.SeleniumTestBase.<init>(SeleniumTestBase.java:73)
+	at com.fluke.connect.pages.MeasurementsPage.<init>(MeasurementsPage.java:17)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.support.PageFactory.instantiatePage(PageFactory.java:129)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:64)
+	at com.fluke.connect.test_cases.MeasurementScreenTest.deleteMeasurements(MeasurementScreenTest.java:84)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+2018-04-27 13:52:52 INFO  SeleniumTestBase:202 - total imgae before deletion is  2
+2018-04-27 13:52:55 INFO  SeleniumTestBase:202 - image remaining after deletion 1 image   1
+2018-04-27 13:52:55 INFO  SeleniumTestBase:202 - upload more images 
+2018-04-27 13:53:08 INFO  SeleniumTestBase:160 - Open 
+2018-04-27 13:53:08 INFO  SeleniumTestBase:202 - Open url
+2018-04-27 13:53:20 INFO  SeleniumTestBase:202 - waiting to load page 
+2018-04-27 13:53:24 ERROR DetailedLogs:37 - Utitlity -> setupLogger()
+java.io.FileNotFoundException: D:\FlukeFramework\src\test\java\com\config\log4j.properties (The system cannot find the path specified)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(Unknown Source)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at com.fluke.connect.utility.DetailedLogs.<init>(DetailedLogs.java:33)
+	at com.fluke.connect.base.SeleniumTestBase.<init>(SeleniumTestBase.java:73)
+	at com.fluke.connect.pages.MeasurementsPage.<init>(MeasurementsPage.java:17)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.support.PageFactory.instantiatePage(PageFactory.java:129)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:64)
+	at com.fluke.connect.test_cases.MeasurementScreenTest.activeSessions(MeasurementScreenTest.java:144)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+2018-04-27 13:53:27 INFO  SeleniumTestBase:202 - found exception  org.openqa.selenium.InvalidSelectorException: invalid selector: Compound class names not permitted
+  (Session info: chrome=65.0.3325.181)
+  (Driver info: chromedriver=2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
+System info: host: 'USER-PC', ip: '192.168.1.11', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=false, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=XP, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7), userDataDir=C:\Users\User\AppData\Local\Temp\scoped_dir10164_7432}, takesHeapSnapshot=true, pageLoadStrategy=normal, unhandledPromptBehavior=, databaseEnabled=false, handlesAlerts=true, version=65.0.3325.181, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: e375212c7ffb66f2118b9252c437d263
+*** Element info: {Using=class name, value=highcharts-point highcharts-color-0}
+2018-04-27 13:53:29 INFO  SeleniumTestBase:245 - browser closed
+2018-04-27 13:56:27 ERROR DetailedLogs:37 - Utitlity -> setupLogger()
+java.io.FileNotFoundException: D:\FlukeFramework\src\test\java\com\config\log4j.properties (The system cannot find the path specified)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(Unknown Source)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at com.fluke.connect.utility.DetailedLogs.<init>(DetailedLogs.java:33)
+	at com.fluke.connect.base.SeleniumTestBase.<init>(SeleniumTestBase.java:73)
+	at com.fluke.connect.test_cases.MeasurementScreenTest.<init>(MeasurementScreenTest.java:25)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.testng.internal.ObjectFactoryImpl.newInstance(ObjectFactoryImpl.java:23)
+	at org.testng.internal.ClassHelper.createInstance1(ClassHelper.java:410)
+	at org.testng.internal.ClassHelper.createInstance(ClassHelper.java:323)
+	at org.testng.internal.ClassImpl.getDefaultInstance(ClassImpl.java:126)
+	at org.testng.internal.ClassImpl.getInstances(ClassImpl.java:191)
+	at org.testng.TestClass.getInstances(TestClass.java:99)
+	at org.testng.TestClass.initTestClassesAndInstances(TestClass.java:85)
+	at org.testng.TestClass.init(TestClass.java:77)
+	at org.testng.TestClass.<init>(TestClass.java:42)
+	at org.testng.TestRunner.initMethods(TestRunner.java:423)
+	at org.testng.TestRunner.init(TestRunner.java:250)
+	at org.testng.TestRunner.init(TestRunner.java:220)
+	at org.testng.TestRunner.<init>(TestRunner.java:169)
+	at org.testng.remote.support.RemoteTestNG6_10$1.newTestRunner(RemoteTestNG6_10.java:28)
+	at org.testng.remote.support.RemoteTestNG6_10$DelegatingTestRunnerFactory.newTestRunner(RemoteTestNG6_10.java:61)
+	at org.testng.SuiteRunner$ProxyTestRunnerFactory.newTestRunner(SuiteRunner.java:616)
+	at org.testng.SuiteRunner.init(SuiteRunner.java:185)
+	at org.testng.SuiteRunner.<init>(SuiteRunner.java:131)
+	at org.testng.TestNG.createSuiteRunner(TestNG.java:1383)
+	at org.testng.TestNG.createSuiteRunners(TestNG.java:1363)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1217)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+2018-04-27 13:56:38 INFO  SeleniumTestBase:160 - Open 
+2018-04-27 13:56:38 INFO  SeleniumTestBase:202 - Open url
+2018-04-27 13:56:50 INFO  SeleniumTestBase:202 - waiting to load page 
+2018-04-27 13:56:54 ERROR DetailedLogs:37 - Utitlity -> setupLogger()
+java.io.FileNotFoundException: D:\FlukeFramework\src\test\java\com\config\log4j.properties (The system cannot find the path specified)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(Unknown Source)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at com.fluke.connect.utility.DetailedLogs.<init>(DetailedLogs.java:33)
+	at com.fluke.connect.base.SeleniumTestBase.<init>(SeleniumTestBase.java:73)
+	at com.fluke.connect.pages.MeasurementsPage.<init>(MeasurementsPage.java:17)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.support.PageFactory.instantiatePage(PageFactory.java:129)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:64)
+	at com.fluke.connect.test_cases.MeasurementScreenTest.verifyMeasurements(MeasurementScreenTest.java:48)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+2018-04-27 13:56:55 INFO  SeleniumTestBase:202 - total number of images are present1
+2018-04-27 13:57:06 INFO  SeleniumTestBase:160 - Open 
+2018-04-27 13:57:06 INFO  SeleniumTestBase:202 - Open url
+2018-04-27 13:57:23 ERROR DetailedLogs:37 - Utitlity -> setupLogger()
+java.io.FileNotFoundException: D:\FlukeFramework\src\test\java\com\config\log4j.properties (The system cannot find the path specified)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(Unknown Source)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at com.fluke.connect.utility.DetailedLogs.<init>(DetailedLogs.java:33)
+	at com.fluke.connect.base.SeleniumTestBase.<init>(SeleniumTestBase.java:73)
+	at com.fluke.connect.pages.MeasurementsPage.<init>(MeasurementsPage.java:17)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.support.PageFactory.instantiatePage(PageFactory.java:129)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:64)
+	at com.fluke.connect.test_cases.MeasurementScreenTest.deleteMeasurements(MeasurementScreenTest.java:84)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+2018-04-27 13:57:25 INFO  SeleniumTestBase:202 - total imgae before deletion is  1
+2018-04-27 13:59:09 INFO  SeleniumTestBase:158 - Open 
+2018-04-27 13:59:09 INFO  SeleniumTestBase:200 - Open url
+2018-04-27 13:59:20 INFO  SeleniumTestBase:200 - waiting to load page 
+2018-04-27 14:00:56 INFO  SeleniumTestBase:200 - Open url
+2018-04-27 14:45:53 INFO  SeleniumTestBase:158 - Open 
+2018-04-27 14:45:53 INFO  SeleniumTestBase:200 - Open url
+2018-04-27 14:46:07 INFO  SeleniumTestBase:200 - waiting to load page 
+2018-04-27 14:46:08 INFO  SeleniumTestBase:200 - total number of images are present5
+2018-04-27 14:46:20 INFO  SeleniumTestBase:158 - Open 
+2018-04-27 14:46:20 INFO  SeleniumTestBase:200 - Open url
+2018-04-27 14:46:35 INFO  SeleniumTestBase:200 - total imgae before deletion is  5
+2018-04-27 14:46:38 INFO  SeleniumTestBase:200 - image remaining after deletion 1 image   4
+2018-04-27 14:46:38 INFO  SeleniumTestBase:200 - total number of image present4
+2018-04-27 14:46:41 INFO  SeleniumTestBase:200 - image remaining after deletion   2
+2018-04-27 14:46:54 INFO  SeleniumTestBase:158 - Open 
+2018-04-27 14:46:54 INFO  SeleniumTestBase:200 - Open url
+2018-04-27 14:47:08 INFO  SeleniumTestBase:200 - waiting to load page 
+2018-04-27 14:47:13 INFO  SeleniumTestBase:200 - found exception  org.openqa.selenium.InvalidSelectorException: invalid selector: Compound class names not permitted
+  (Session info: chrome=65.0.3325.181)
+  (Driver info: chromedriver=2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
+System info: host: 'USER-PC', ip: '192.168.1.14', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=false, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=XP, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7), userDataDir=C:\Users\User\AppData\Local\Temp\scoped_dir8380_18812}, takesHeapSnapshot=true, pageLoadStrategy=normal, unhandledPromptBehavior=, databaseEnabled=false, handlesAlerts=true, version=65.0.3325.181, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 8b8535ca86c2ae0bd3d1898f4b92509a
+*** Element info: {Using=class name, value=highcharts-point highcharts-color-0}
+2018-04-27 14:47:17 INFO  SeleniumTestBase:243 - browser closed
+2018-05-03 16:09:26 INFO  SeleniumTestBase:158 - Open 
+2018-05-03 16:09:26 INFO  SeleniumTestBase:200 - Open url
+2018-05-03 16:09:41 INFO  SeleniumTestBase:200 - waiting to load page 
+2018-05-03 16:09:42 INFO  SeleniumTestBase:200 - total number of images are present5
+2018-05-03 16:09:52 INFO  SeleniumTestBase:158 - Open 
+2018-05-03 16:09:52 INFO  SeleniumTestBase:200 - Open url
+2018-05-03 16:10:06 INFO  SeleniumTestBase:200 - total imgae before deletion is  5
+2018-05-03 16:10:08 INFO  SeleniumTestBase:200 - image remaining after deletion 1 image   4
+2018-05-03 16:10:08 INFO  SeleniumTestBase:200 - total number of image present4
+2018-05-03 16:10:11 INFO  SeleniumTestBase:200 - image remaining after deletion   2
+2018-05-03 16:10:20 INFO  SeleniumTestBase:158 - Open 
+2018-05-03 16:10:20 INFO  SeleniumTestBase:200 - Open url
+2018-05-03 16:10:31 INFO  SeleniumTestBase:200 - waiting to load page 
+2018-05-03 16:10:35 INFO  SeleniumTestBase:200 - found exception  org.openqa.selenium.InvalidSelectorException: invalid selector: Compound class names not permitted
+  (Session info: chrome=66.0.3359.139)
+  (Driver info: chromedriver=2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
+System info: host: 'USER-PC', ip: '192.168.1.132', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=false, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=XP, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7), userDataDir=C:\Users\User\AppData\Local\Temp\scoped_dir1188_30444}, takesHeapSnapshot=true, pageLoadStrategy=normal, unhandledPromptBehavior=, databaseEnabled=false, handlesAlerts=true, version=66.0.3359.139, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 129bcc1445097a815928592c0a355f16
+*** Element info: {Using=class name, value=highcharts-point highcharts-color-0}
+2018-05-03 16:10:37 INFO  SeleniumTestBase:243 - browser closed
+2018-05-08 12:40:28 INFO  SeleniumTestBase:199 - Open url
+2018-05-08 12:40:41 INFO  SeleniumTestBase:199 - waiting to load page 
+2018-05-08 12:40:43 INFO  SeleniumTestBase:199 - total number of images are present5
+2018-05-08 12:40:56 INFO  SeleniumTestBase:157 - Open 
+2018-05-08 12:40:56 INFO  SeleniumTestBase:199 - Open url
+2018-05-08 12:41:11 INFO  SeleniumTestBase:199 - total imgae before deletion is  5
+2018-05-08 12:41:13 INFO  SeleniumTestBase:199 - image remaining after deletion 1 image   4
+2018-05-08 12:41:13 INFO  SeleniumTestBase:199 - total number of image present4
+2018-05-08 12:41:24 INFO  SeleniumTestBase:157 - Open 
+2018-05-08 12:41:24 INFO  SeleniumTestBase:199 - Open url
+2018-05-08 12:41:35 INFO  SeleniumTestBase:199 - waiting to load page 
+2018-05-08 12:41:40 INFO  SeleniumTestBase:199 - found exception  org.openqa.selenium.InvalidSelectorException: invalid selector: Compound class names not permitted
+  (Session info: chrome=66.0.3359.139)
+  (Driver info: chromedriver=2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7),platform=Windows NT 10.0.15063 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
+System info: host: 'DESKTOP-LTFTU4M', ip: '192.168.1.11', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=false, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=XP, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7), userDataDir=C:\Users\Dell\AppData\Local\Temp\scoped_dir1688_16800}, takesHeapSnapshot=true, pageLoadStrategy=normal, unhandledPromptBehavior=, databaseEnabled=false, handlesAlerts=true, version=66.0.3359.139, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 5fdeb0e56c0347245c5252ec09f25877
+*** Element info: {Using=class name, value=highcharts-point highcharts-color-0}
+2018-05-08 12:41:42 INFO  SeleniumTestBase:242 - browser closed
+2018-05-08 15:00:11 INFO  SeleniumTestBase:199 - Open url
+2018-05-08 15:00:20 INFO  SeleniumTestBase:199 - waiting to load page 
+2018-05-08 15:04:08 INFO  SeleniumTestBase:199 - Open url
+2018-05-08 15:04:18 INFO  SeleniumTestBase:199 - waiting to load page 
+2018-05-08 15:04:23 INFO  SeleniumTestBase:199 - total number of images are present5
+2018-05-08 15:15:10 INFO  SeleniumTestBase:199 - Open url
+2018-05-08 15:15:37 INFO  SeleniumTestBase:199 - waiting to load page 
+2018-05-08 15:15:38 INFO  SeleniumTestBase:199 - total number of images are present5
+2018-05-08 15:15:47 INFO  SeleniumTestBase:157 - Open 
+2018-05-08 15:15:47 INFO  SeleniumTestBase:199 - Open url
+2018-05-08 15:16:00 INFO  SeleniumTestBase:199 - total imgae before deletion is  5
+2018-05-08 15:16:03 INFO  SeleniumTestBase:199 - image remaining after deletion 1 image   4
+2018-05-08 15:16:03 INFO  SeleniumTestBase:199 - total number of image present4
+2018-05-08 15:16:05 INFO  SeleniumTestBase:199 - image remaining after deletion   2
+2018-05-08 15:16:15 INFO  SeleniumTestBase:157 - Open 
+2018-05-08 15:16:15 INFO  SeleniumTestBase:199 - Open url
+2018-05-08 15:16:26 INFO  SeleniumTestBase:199 - waiting to load page 
+2018-05-08 15:16:29 INFO  SeleniumTestBase:199 - found exception  org.openqa.selenium.InvalidSelectorException: invalid selector: Compound class names not permitted
+  (Session info: chrome=66.0.3359.139)
+  (Driver info: chromedriver=2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7),platform=Windows NT 10.0.15063 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
+System info: host: 'DESKTOP-LTFTU4M', ip: '192.168.1.11', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=false, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=XP, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7), userDataDir=C:\Users\Dell\AppData\Local\Temp\scoped_dir7836_9773}, takesHeapSnapshot=true, pageLoadStrategy=normal, unhandledPromptBehavior=, databaseEnabled=false, handlesAlerts=true, version=66.0.3359.139, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 8c93f2c4ab08bfdcc6dbbe5dc1659d73
+*** Element info: {Using=class name, value=highcharts-point highcharts-color-0}
+2018-05-08 15:16:31 INFO  SeleniumTestBase:242 - browser closed
+2018-05-08 15:17:34 INFO  SeleniumTestBase:199 - Open url
+2018-05-08 15:17:42 INFO  SeleniumTestBase:199 - waiting to load page 
+2018-05-08 15:17:44 INFO  SeleniumTestBase:199 - found exception  org.openqa.selenium.ElementNotVisibleException: element not visible
+  (Session info: chrome=66.0.3359.139)
+  (Driver info: chromedriver=2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7),platform=Windows NT 10.0.15063 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
+System info: host: 'DESKTOP-LTFTU4M', ip: '192.168.1.11', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=false, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=XP, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7), userDataDir=C:\Users\Dell\AppData\Local\Temp\scoped_dir9900_271}, takesHeapSnapshot=true, pageLoadStrategy=normal, unhandledPromptBehavior=, databaseEnabled=false, handlesAlerts=true, version=66.0.3359.139, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 1bf9b1e0b3cb30e8549e7a76d50596e8
+2018-05-08 15:17:56 INFO  SeleniumTestBase:157 - Open 
+2018-05-08 15:17:56 INFO  SeleniumTestBase:199 - Open url
+2018-05-08 15:18:18 INFO  SeleniumTestBase:157 - Open 
+2018-05-08 15:18:18 INFO  SeleniumTestBase:199 - Open url
+2018-05-08 15:18:27 INFO  SeleniumTestBase:199 - waiting to load page 
+2018-05-08 15:18:29 INFO  SeleniumTestBase:199 - found exception  org.openqa.selenium.ElementNotVisibleException: element not visible
+  (Session info: chrome=66.0.3359.139)
+  (Driver info: chromedriver=2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7),platform=Windows NT 10.0.15063 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
+System info: host: 'DESKTOP-LTFTU4M', ip: '192.168.1.11', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=false, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=XP, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7), userDataDir=C:\Users\Dell\AppData\Local\Temp\scoped_dir5496_390}, takesHeapSnapshot=true, pageLoadStrategy=normal, unhandledPromptBehavior=, databaseEnabled=false, handlesAlerts=true, version=66.0.3359.139, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 2f6a6dd57a78ff875991c1bbe52929fb
+2018-05-08 15:18:30 INFO  SeleniumTestBase:242 - browser closed
+2018-05-08 15:24:22 INFO  SeleniumTestBase:157 - Open 
+2018-05-08 15:25:44 INFO  SeleniumTestBase:157 - Open 
+2018-05-08 15:26:04 INFO  SeleniumTestBase:157 - Open 
+2018-05-08 15:26:13 INFO  SeleniumTestBase:199 - waiting to load page 
+2018-05-08 15:26:17 INFO  SeleniumTestBase:242 - browser closed
+2018-05-08 15:28:30 INFO  SeleniumTestBase:157 - Open 
+2018-05-08 15:28:44 INFO  SeleniumTestBase:199 - total imgae before deletion is  5
+2018-05-08 15:28:47 INFO  SeleniumTestBase:199 - image remaining after deletion 1 image   4
+2018-05-08 15:28:47 INFO  SeleniumTestBase:199 - total number of image present4
+2018-05-08 15:28:49 INFO  SeleniumTestBase:199 - image remaining after deletion   2
+2018-05-08 15:28:59 INFO  SeleniumTestBase:157 - Open 
+2018-05-08 15:29:09 INFO  SeleniumTestBase:199 - waiting to load page 
+2018-05-08 15:29:18 INFO  SeleniumTestBase:242 - browser closed
+2018-05-08 23:47:44 INFO  SeleniumTestBase:199 - waiting to load page 
+2018-05-08 23:47:46 INFO  SeleniumTestBase:199 - total number of images are present3
+2018-05-08 23:47:56 INFO  SeleniumTestBase:157 - Open 
+2018-05-08 23:48:08 INFO  SeleniumTestBase:199 - total imgae before deletion is  3
+2018-05-08 23:48:10 INFO  SeleniumTestBase:199 - image remaining after deletion 1 image   2
+2018-05-08 23:48:10 INFO  SeleniumTestBase:199 - total number of image present2
+2018-05-08 23:48:52 INFO  SeleniumTestBase:199 - image remaining after deletion   0
+2018-05-08 23:49:03 INFO  SeleniumTestBase:157 - Open 
+2018-05-08 23:49:11 INFO  SeleniumTestBase:199 - waiting to load page 
+2018-05-08 23:49:18 INFO  SeleniumTestBase:242 - browser closed
+2018-05-09 12:30:22 INFO  SeleniumTestBase:199 - waiting to load page 
+2018-05-09 12:31:04 INFO  SeleniumTestBase:199 - total number of images are present0
+2018-05-09 12:31:54 INFO  SeleniumTestBase:157 - Open 
+2018-05-09 12:32:45 INFO  SeleniumTestBase:199 - total imgae before deletion is  0
+2018-05-09 12:33:25 INFO  SeleniumTestBase:199 - upload more images 
+2018-05-09 12:33:35 INFO  SeleniumTestBase:157 - Open 
+2018-05-09 12:33:46 INFO  SeleniumTestBase:199 - waiting to load page 
+2018-05-09 12:33:51 INFO  SeleniumTestBase:199 - found exception  org.openqa.selenium.InvalidSelectorException: invalid selector: Compound class names not permitted
+  (Session info: chrome=66.0.3359.139)
+  (Driver info: chromedriver=2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7),platform=Windows NT 10.0.15063 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
+System info: host: 'DESKTOP-LTFTU4M', ip: '192.168.1.11', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=false, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=XP, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7), userDataDir=C:\Users\Dell\AppData\Local\Temp\scoped_dir6916_18651}, takesHeapSnapshot=true, pageLoadStrategy=normal, unhandledPromptBehavior=, databaseEnabled=false, handlesAlerts=true, version=66.0.3359.139, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: a90770f787e7bed6fdd56a0cdd36dbaa
+*** Element info: {Using=class name, value=highcharts-point highcharts-color-0}
+2018-05-09 12:33:52 INFO  SeleniumTestBase:242 - browser closed
+2018-05-09 15:21:59 INFO  SeleniumTestBase:199 - waiting to load page 
+2018-05-09 15:22:39 INFO  SeleniumTestBase:199 - total number of images are present0
+2018-05-09 15:22:50 INFO  SeleniumTestBase:157 - Open 
+2018-05-09 15:23:42 INFO  SeleniumTestBase:199 - total imgae before deletion is  0
+2018-05-09 15:24:22 INFO  SeleniumTestBase:199 - upload more images 
+2018-05-09 15:24:32 INFO  SeleniumTestBase:157 - Open 
+2018-05-09 15:24:41 INFO  SeleniumTestBase:199 - waiting to load page 
+2018-05-09 15:24:47 INFO  SeleniumTestBase:199 - found exception  org.openqa.selenium.InvalidSelectorException: invalid selector: Compound class names not permitted
+  (Session info: chrome=66.0.3359.139)
+  (Driver info: chromedriver=2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7),platform=Windows NT 10.0.15063 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
+System info: host: 'DESKTOP-LTFTU4M', ip: '192.168.1.11', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=false, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=XP, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7), userDataDir=C:\Users\Dell\AppData\Local\Temp\scoped_dir3400_4886}, takesHeapSnapshot=true, pageLoadStrategy=normal, unhandledPromptBehavior=, databaseEnabled=false, handlesAlerts=true, version=66.0.3359.139, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: ed7c27c51b43ee1c9c80d72b738a90ba
+*** Element info: {Using=class name, value=highcharts-point highcharts-color-0}
+2018-05-09 15:24:49 INFO  SeleniumTestBase:242 - browser closed
+2018-05-09 15:25:49 INFO  SeleniumTestBase:199 - waiting to load page 
+2018-05-09 15:26:32 INFO  SeleniumTestBase:199 - total number of images are present0
+2018-05-09 15:26:42 INFO  SeleniumTestBase:157 - Open 
+2018-05-09 15:27:34 INFO  SeleniumTestBase:199 - total imgae before deletion is  0
+2018-05-09 15:28:14 INFO  SeleniumTestBase:199 - upload more images 
+2018-05-09 15:28:24 INFO  SeleniumTestBase:157 - Open 
+2018-05-09 15:28:34 INFO  SeleniumTestBase:199 - waiting to load page 
+2018-05-09 15:28:38 INFO  SeleniumTestBase:199 - found exception  org.openqa.selenium.InvalidSelectorException: invalid selector: Compound class names not permitted
+  (Session info: chrome=66.0.3359.139)
+  (Driver info: chromedriver=2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7),platform=Windows NT 10.0.15063 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
+System info: host: 'DESKTOP-LTFTU4M', ip: '192.168.1.11', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=false, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=XP, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7), userDataDir=C:\Users\Dell\AppData\Local\Temp\scoped_dir8412_19958}, takesHeapSnapshot=true, pageLoadStrategy=normal, unhandledPromptBehavior=, databaseEnabled=false, handlesAlerts=true, version=66.0.3359.139, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 16f97054e5d05207fb0dba6acc563041
+*** Element info: {Using=class name, value=highcharts-point highcharts-color-0}
+2018-05-09 15:28:40 INFO  SeleniumTestBase:242 - browser closed
+2018-05-09 15:32:31 INFO  SeleniumTestBase:199 - waiting to load page 
+2018-05-09 15:33:12 INFO  SeleniumTestBase:199 - total number of images are present0
+2018-05-09 15:33:22 INFO  SeleniumTestBase:157 - Open 
+2018-05-09 15:34:16 INFO  SeleniumTestBase:199 - total imgae before deletion is  0
+2018-05-09 15:34:56 INFO  SeleniumTestBase:199 - upload more images 
+2018-05-09 15:35:07 INFO  SeleniumTestBase:157 - Open 
+2018-05-09 15:35:16 INFO  SeleniumTestBase:199 - waiting to load page 
+2018-05-09 15:35:24 INFO  SeleniumTestBase:199 - found exception  org.openqa.selenium.InvalidSelectorException: invalid selector: Compound class names not permitted
+  (Session info: chrome=66.0.3359.139)
+  (Driver info: chromedriver=2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7),platform=Windows NT 10.0.15063 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
+System info: host: 'DESKTOP-LTFTU4M', ip: '192.168.1.11', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=false, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=XP, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7), userDataDir=C:\Users\Dell\AppData\Local\Temp\scoped_dir6828_8834}, takesHeapSnapshot=true, pageLoadStrategy=normal, unhandledPromptBehavior=, databaseEnabled=false, handlesAlerts=true, version=66.0.3359.139, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 2b4f778f7425ffe695983c321831d793
+*** Element info: {Using=class name, value=highcharts-point highcharts-color-0}
+2018-05-09 15:35:26 INFO  SeleniumTestBase:242 - browser closed
+2018-05-09 18:25:24 INFO  SeleniumTestBase:199 - waiting to load page 
+2018-05-09 18:26:07 INFO  SeleniumTestBase:199 - total number of images are present0
+2018-05-09 18:26:17 INFO  SeleniumTestBase:157 - Open 
+2018-05-09 18:27:11 INFO  SeleniumTestBase:199 - total imgae before deletion is  0
+2018-05-09 18:27:51 INFO  SeleniumTestBase:199 - upload more images 
+2018-05-09 18:28:05 INFO  SeleniumTestBase:157 - Open 
+2018-05-09 18:28:15 INFO  SeleniumTestBase:199 - waiting to load page 
+2018-05-09 18:28:23 INFO  SeleniumTestBase:199 - found exception  org.openqa.selenium.InvalidSelectorException: invalid selector: Compound class names not permitted
+  (Session info: chrome=66.0.3359.139)
+  (Driver info: chromedriver=2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7),platform=Windows NT 10.0.15063 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
+System info: host: 'DESKTOP-LTFTU4M', ip: '192.168.1.11', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=false, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=XP, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7), userDataDir=C:\Users\Dell\AppData\Local\Temp\scoped_dir2836_10830}, takesHeapSnapshot=true, pageLoadStrategy=normal, unhandledPromptBehavior=, databaseEnabled=false, handlesAlerts=true, version=66.0.3359.139, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: e300ccb5d12d09a43895ae70b326e453
+*** Element info: {Using=class name, value=highcharts-point highcharts-color-0}
+2018-05-09 18:28:27 INFO  SeleniumTestBase:242 - browser closed
+2018-05-09 18:38:51 INFO  SeleniumTestBase:199 - waiting to load page 
+2018-05-09 18:38:53 INFO  SeleniumTestBase:199 - total number of images are present5
+2018-05-09 18:39:02 INFO  SeleniumTestBase:157 - Open 
+2018-05-09 18:39:20 INFO  SeleniumTestBase:199 - total imgae before deletion is  5
+2018-05-09 18:39:30 INFO  SeleniumTestBase:157 - Open 
+2018-05-09 18:39:46 INFO  SeleniumTestBase:199 - waiting to load page 
+2018-05-09 18:39:49 INFO  SeleniumTestBase:199 - found exception  org.openqa.selenium.InvalidSelectorException: invalid selector: Compound class names not permitted
+  (Session info: chrome=66.0.3359.139)
+  (Driver info: chromedriver=2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7),platform=Windows NT 10.0.15063 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
+System info: host: 'DESKTOP-LTFTU4M', ip: '192.168.1.11', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=false, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=XP, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7), userDataDir=C:\Users\Dell\AppData\Local\Temp\scoped_dir4036_25101}, takesHeapSnapshot=true, pageLoadStrategy=normal, unhandledPromptBehavior=, databaseEnabled=false, handlesAlerts=true, version=66.0.3359.139, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: ee6a9d0f6f18ff80ce4247b62540dd77
+*** Element info: {Using=class name, value=highcharts-point highcharts-color-0}
+2018-05-09 18:39:51 INFO  SeleniumTestBase:242 - browser closed
+2018-05-09 18:41:16 INFO  SeleniumTestBase:199 - waiting to load page 
+2018-05-09 18:41:19 INFO  SeleniumTestBase:199 - total number of images are present5
+2018-05-09 18:41:33 INFO  SeleniumTestBase:157 - Open 
+2018-05-09 18:41:50 INFO  SeleniumTestBase:199 - total imgae before deletion is  5
+2018-05-09 18:42:00 INFO  SeleniumTestBase:157 - Open 
+2018-05-09 18:42:13 INFO  SeleniumTestBase:199 - waiting to load page 
+2018-05-09 18:42:17 INFO  SeleniumTestBase:199 - found exception  org.openqa.selenium.InvalidSelectorException: invalid selector: Compound class names not permitted
+  (Session info: chrome=66.0.3359.139)
+  (Driver info: chromedriver=2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7),platform=Windows NT 10.0.15063 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
+System info: host: 'DESKTOP-LTFTU4M', ip: '192.168.1.11', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=false, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=XP, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7), userDataDir=C:\Users\Dell\AppData\Local\Temp\scoped_dir7548_25265}, takesHeapSnapshot=true, pageLoadStrategy=normal, unhandledPromptBehavior=, databaseEnabled=false, handlesAlerts=true, version=66.0.3359.139, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 7c2e55c01bd4a4404f8db02ba126b096
+*** Element info: {Using=class name, value=highcharts-point highcharts-color-0}
+2018-05-09 18:42:19 INFO  SeleniumTestBase:242 - browser closed
+2018-05-09 18:43:21 INFO  SeleniumTestBase:199 - waiting to load page 
+2018-05-09 18:43:22 INFO  SeleniumTestBase:199 - total number of images are present5
+2018-05-09 18:43:34 INFO  SeleniumTestBase:157 - Open 
+2018-05-09 18:43:51 INFO  SeleniumTestBase:199 - total imgae before deletion is  5
+2018-05-09 18:43:51 INFO  SeleniumTestBase:199 - image remaining after deletion 1 image   5
+2018-05-09 18:43:51 INFO  SeleniumTestBase:199 - total number of image present5
+2018-05-09 18:44:06 INFO  SeleniumTestBase:157 - Open 
+2018-05-09 18:44:17 INFO  SeleniumTestBase:199 - waiting to load page 
+2018-05-09 18:44:21 INFO  SeleniumTestBase:199 - found exception  org.openqa.selenium.InvalidSelectorException: invalid selector: Compound class names not permitted
+  (Session info: chrome=66.0.3359.139)
+  (Driver info: chromedriver=2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7),platform=Windows NT 10.0.15063 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
+System info: host: 'DESKTOP-LTFTU4M', ip: '192.168.1.11', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=false, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=XP, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7), userDataDir=C:\Users\Dell\AppData\Local\Temp\scoped_dir2684_14955}, takesHeapSnapshot=true, pageLoadStrategy=normal, unhandledPromptBehavior=, databaseEnabled=false, handlesAlerts=true, version=66.0.3359.139, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 546dbf9df5095ccbe1d991ff31c75b71
+*** Element info: {Using=class name, value=highcharts-point highcharts-color-0}
+2018-05-09 18:44:23 INFO  SeleniumTestBase:242 - browser closed

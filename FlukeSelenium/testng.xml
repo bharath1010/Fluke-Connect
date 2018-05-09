@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Fluke">
+
+<test name="Web">
+      <classes>
+      <class name="com.fluke.connect.test_cases.MeasurementScreenTest">
+      </class>
+    </classes>
+  </test> <!-- Test -->
+
+<test name="Desktop Winium">
+    <classes>
+      <class name="com.fluke.testcase.android.TestBySikuli"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  <test name="Desktop Sikulli">
+    <classes>
+      <class name="com.fluke.testcase.android.TestByWinium"/>
+    </classes>
+  </test> <!-- Test -->
+
+  
+  <test name="Android">
+    <classes>
+      <class name="com.fluke.testcase.android.TC_MeasureFilter_FCM1587_179"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  
+</suite> <!-- Suite -->

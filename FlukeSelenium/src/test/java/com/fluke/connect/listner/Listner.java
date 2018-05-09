@@ -13,12 +13,11 @@ import org.testng.ITestListener;
 import org.testng.ITestResult;
 import org.testng.Reporter;
 
-import com.fluke.connect.base.TestBase;
+import com.fluke.connect.base.SeleniumTestBase;
 import com.fluke.connect.utility.MonitoringMail;
 import com.fluke.connect.utility.TestConfig;
 
-@SuppressWarnings("unused")
-public class Listner extends TestBase implements ITestListener, ISuiteListener {
+public class Listner extends SeleniumTestBase implements ITestListener, ISuiteListener {
 
 	public void onTestStart(ITestResult result) {
 

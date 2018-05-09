@@ -8,7 +8,9 @@ import org.openqa.selenium.support.FindAll;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 
-public class MeasurementsPage {
+import com.fluke.connect.base.SeleniumTestBase;
+
+public class MeasurementsPage extends SeleniumTestBase{
 
 	WebDriver driver;
 
@@ -34,6 +36,9 @@ public class MeasurementsPage {
 
 	@FindBy(how = How.CSS, using = "a#dialog_ok")
 	WebElement okbutton;
+	
+	@FindBy(how = How.XPATH, using = "//a[@href='/remote-monitoring']")
+	WebElement activesession;
 
 	public WebElement leftCornerText() {
 
@@ -73,6 +78,12 @@ public class MeasurementsPage {
 	public void okButton() {
 
 		okbutton.click();
+
+	}
+	
+	public void activeSession() {
+
+		activesession.click();
 
 	}
 

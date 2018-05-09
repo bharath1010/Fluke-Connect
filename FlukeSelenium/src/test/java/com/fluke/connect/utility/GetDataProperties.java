@@ -6,7 +6,6 @@ import java.util.Properties;
 
 import org.testng.annotations.Test;
 
-import com.fluke.connect.exception.SeleniumException;
 
 @SuppressWarnings("unused")
 public class GetDataProperties {
@@ -17,7 +16,7 @@ public class GetDataProperties {
 	 * @throws SeleniumException
 	 */
 
-	public static String getConfData(String var) throws SeleniumException {
+	public static String getConfData(String var)  {
 		try {
 
 			File file = new File(

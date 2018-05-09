@@ -7,7 +7,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.events.WebDriverEventListener;
 import org.testng.Reporter;
 
-public class WebEventListener extends com.fluke.connect.base.TestBase implements WebDriverEventListener {
+public class WebEventListener extends com.fluke.connect.base.SeleniumTestBase implements WebDriverEventListener {
 
 	public static final Logger log = Logger.getLogger(WebEventListener.class.getName());
 

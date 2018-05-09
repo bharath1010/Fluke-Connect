@@ -8,12 +8,16 @@ import org.sikuli.script.Screen;
 
 public class Wdriver {
 	public static WiniumDriver driver;
+	@SuppressWarnings("unused")
 	public static void launchApplication()
 	{
 		try
 		{
 			Screen screen;  
-			DesktopOptions opt=new DesktopOptions();
+			Runtime rt=Runtime.getRuntime();
+			Process pr=rt.exec("C:\\Users\\Dell\\Documents\\FlukeFramework\\FlukeFramework\\src\\test\\resources\\drivers\\Winium.Desktop.Driver.exe");
+			System.out.println("Winium Diver Is Started");
+            DesktopOptions opt=new DesktopOptions();
 			opt.setApplicationPath(Global.applicationPath);
 			driver=new WiniumDriver(new URL("http://localhost:9999"),opt);
 			Thread.sleep(10000);

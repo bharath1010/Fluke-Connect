@@ -72,6 +72,7 @@ public class sikulli {
 
 	public  void sClick(String imagename) {
 		String pathofthesikulipic = Global.sikulipicpath.concat(imagename+ ".JPG");
+		@SuppressWarnings("unused")
 		Pattern pattern = new Pattern(pathofthesikulipic);
 		try {
 			screen.click(pathofthesikulipic);
@@ -80,6 +81,7 @@ public class sikulli {
 		}
 	}
 
+	@SuppressWarnings("unused")
 	public  void sDoubleClick(String imagename)
 	{
 		String pathofthesikulipic = Global.sikulipicpath.concat(imagename+ ".JPG");
@@ -107,6 +109,7 @@ public class sikulli {
 
 	
 
+	@SuppressWarnings({ "rawtypes", "unchecked" })
 	public  ArrayList<String> getAllDropDownValue(String dropdownImageName,int lenthOfTheDropdown) {
 		ArrayList lst = new ArrayList();
 		try {
@@ -176,8 +179,10 @@ public class sikulli {
 
 	
 	
+	@SuppressWarnings("rawtypes")
 	public  void selectDropDownValue(String dropdownImageName,String expectedOption ,int lengtOfDropdown) {
 	
+	@SuppressWarnings("unused")
 	ArrayList lst = new ArrayList();
 		try {
 			String pathofthesikulipic = Global.sikulipicpath
@@ -210,10 +215,16 @@ public class sikulli {
 
 			
 		     }
+		
+		
 
 	} catch (Exception e) {
 		e.printStackTrace();
 	   }
-	
-}
+	}	
+		public void closeApplication(){
+			sClick("close");
+			
+		}
+
 }

@@ -16,10 +16,10 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.DataProvider;
 
-import com.fluke.connect.base.TestBase;
+import com.fluke.connect.base.SeleniumTestBase;
 
 @SuppressWarnings("unused")
-public class TestUtil extends TestBase {
+public class TestUtil extends SeleniumTestBase {
 
 	public static String destDir;
 	public static DateFormat dateFormat;

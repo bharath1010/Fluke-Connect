@@ -11,11 +11,14 @@ public class AppiumServer {
 
 	public static void start() {
 
-		// starting the Appium server code
-
+		/*
+		 * Start Appium Server
+		 */
 		service = AppiumDriverLocalService.buildService(new AppiumServiceBuilder()
-				.usingDriverExecutable(new File("C:\\Program Files (x86)\\Appium\\node.exe"))
-				.withAppiumJS(new File("C:\\Program Files (x86)\\Appium\\node_modules\\appium\\bin\\appium.js"))
+				.usingDriverExecutable(new File("C:\\Program Files\\nodejs\\node.exe"))
+				.withAppiumJS(new File(
+						"C:\\Users\\DELL\\AppData\\Local\\Programs\\appium-desktop\\resources\\app\\node_modules\\appium\\build\\lib\\main.js"))
+				.withIPAddress("127.0.0.1").usingPort(4723)
 				.withLogFile(new File(System.getProperty("user.dir") + "\\src\\test\\resources\\logs\\Appium.log")));
 
 		service.start();

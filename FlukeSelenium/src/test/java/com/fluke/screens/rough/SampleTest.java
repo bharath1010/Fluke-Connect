@@ -19,6 +19,7 @@ import io.appium.java_client.remote.MobileCapabilityType;
 import io.appium.java_client.service.local.AppiumDriverLocalService;
 import io.appium.java_client.service.local.AppiumServiceBuilder;
 
+@SuppressWarnings("unused")
 public class SampleTest {
 	
 	public static AndroidDriver<AndroidElement> driver;

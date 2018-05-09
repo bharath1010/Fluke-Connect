@@ -1,107 +1,223 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="1" failed="0" ignored="0" total="1" passed="0">
+<testng-results skipped="0" failed="1" ignored="0" total="3" passed="2">
   <reporter-output>
+    <line>
+      <![CDATA[waiting to load page ]]>
+    </line>
+    <line>
+      <![CDATA[total number of images are present5]]>
+    </line>
+    <line>
+      <![CDATA[<a href='C:\Users\Dell\Documents\FlukeFramework\FlukeFramework\target\surefire-reports\html\blank_09_05_2018_06_43_22.png'> <img src='_blank09_05_2018_06_43_22.png' height='100' width='100'/> </a>]]>
+    </line>
+    <line>
+      <![CDATA[total imgae before deletion is  5]]>
+    </line>
+    <line>
+      <![CDATA[image remaining after deletion 1 image   5]]>
+    </line>
+    <line>
+      <![CDATA[total number of image present5]]>
+    </line>
+    <line>
+      <![CDATA[<a href='C:\Users\Dell\Documents\FlukeFramework\FlukeFramework\target\surefire-reports\html\blank_09_05_2018_06_43_52.png'> <img src='_blank09_05_2018_06_43_52.png' height='100' width='100'/> </a>]]>
+    </line>
+    <line>
+      <![CDATA[waiting to load page ]]>
+    </line>
+    <line>
+      <![CDATA[found exception  org.openqa.selenium.InvalidSelectorException: invalid selector: Compound class names not permitted
+  (Session info: chrome=66.0.3359.139)
+  (Driver info: chromedriver=2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7),platform=Windows NT 10.0.15063 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
+System info: host: 'DESKTOP-LTFTU4M', ip: '192.168.1.11', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=false, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=XP, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7), userDataDir=C:\Users\Dell\AppData\Local\Temp\scoped_dir2684_14955}, takesHeapSnapshot=true, pageLoadStrategy=normal, unhandledPromptBehavior=, databaseEnabled=false, handlesAlerts=true, version=66.0.3359.139, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 546dbf9df5095ccbe1d991ff31c75b71
+*** Element info: {Using=class name, value=highcharts-point highcharts-color-0}]]>
+    </line>
+    <line>
+      <![CDATA[<a href='C:\Users\Dell\Documents\FlukeFramework\FlukeFramework\target\surefire-reports\html\blank_09_05_2018_06_44_22.png'> <img src='_blank09_05_2018_06_44_22.png' height='100' width='100'/> </a>]]>
+    </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="203" started-at="2018-04-18T08:56:50Z" finished-at="2018-04-18T08:56:50Z">
+  <suite name="Default suite" duration-ms="88986" started-at="2018-05-09T13:12:54Z" finished-at="2018-05-09T13:14:23Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="203" started-at="2018-04-18T08:56:50Z" finished-at="2018-04-18T08:56:50Z">
-      <class name="com.fluke.screens.rough.SampleTest">
-        <test-method status="FAIL" signature="startService()[pri:0, instance:com.fluke.screens.rough.SampleTest@4fe3c938]" name="startService" is-config="true" duration-ms="156" started-at="2018-04-18T14:26:50Z" finished-at="2018-04-18T14:26:50Z">
-          <exception class="io.appium.java_client.service.local.AppiumServerHasNotBeenStartedLocallyException">
+    <test name="Default test" duration-ms="88986" started-at="2018-05-09T13:12:54Z" finished-at="2018-05-09T13:14:23Z">
+      <class name="com.fluke.connect.test_cases.MeasurementScreenTest">
+        <test-method status="PASS" signature="initilization()[pri:0, instance:com.fluke.connect.test_cases.MeasurementScreenTest@1d7acb34]" name="initilization" is-config="true" duration-ms="12" started-at="2018-05-09T13:12:54Z" finished-at="2018-05-09T13:12:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initilization -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.fluke.connect.test_cases.MeasurementScreenTest@1d7acb34]" name="setUp" is-config="true" duration-ms="27066" started-at="2018-05-09T13:12:54Z" finished-at="2018-05-09T13:13:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyMeasurements()[pri:0, instance:com.fluke.connect.test_cases.MeasurementScreenTest@1d7acb34]" name="verifyMeasurements" duration-ms="1209" started-at="2018-05-09T13:13:21Z" finished-at="2018-05-09T13:13:22Z">
+          <reporter-output>
+            <line>
+              <![CDATA[waiting to load page ]]>
+            </line>
+            <line>
+              <![CDATA[total number of images are present5]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyMeasurements -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.fluke.connect.test_cases.MeasurementScreenTest@1d7acb34]" name="afterMethod" is-config="true" duration-ms="523" started-at="2018-05-09T13:13:22Z" finished-at="2018-05-09T13:13:23Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyMeasurements status=SUCCESS method=MeasurementScreenTest.verifyMeasurements()[pri:0, instance:com.fluke.connect.test_cases.MeasurementScreenTest@1d7acb34] output=waiting to load page ]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[<a href='C:\Users\Dell\Documents\FlukeFramework\FlukeFramework\target\surefire-reports\html\blank_09_05_2018_06_43_22.png'> <img src='_blank09_05_2018_06_43_22.png' height='100' width='100'/> </a>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.fluke.connect.test_cases.MeasurementScreenTest@1d7acb34]" name="setUp" is-config="true" duration-ms="22804" started-at="2018-05-09T13:13:23Z" finished-at="2018-05-09T13:13:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="FAIL" signature="deleteMeasurements()[pri:1, instance:com.fluke.connect.test_cases.MeasurementScreenTest@1d7acb34]" name="deleteMeasurements" duration-ms="6224" started-at="2018-05-09T13:13:46Z" finished-at="2018-05-09T13:13:52Z">
+          <exception class="org.openqa.selenium.WebDriverException">
             <message>
-              <![CDATA[The local appium server has not been started. The given Node.js executable: C:\Program Files\nodejs\node.exe Arguments: [C:\Users\DELL\AppData\Local\Programs\appium-desktop\resources\app\node_modules\appium\build\lib\main.js, --port, 4723, --address, 127.0.0.1, --log, C:\Users\DELL\eclipse-workspace\AutomationFramework\Appium.log] 
-]]>
+              <![CDATA[unknown error: Element <div class="measurementSelect sprite check-box checked"></div> is not clickable at point (574, 238). Other element would receive the click: <div id="cboxOverlay" style="opacity: 0.5; cursor: pointer; visibility: visible;"></div>
+  (Session info: chrome=66.0.3359.139)
+  (Driver info: chromedriver=2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7),platform=Windows NT 10.0.15063 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
+System info: host: 'DESKTOP-LTFTU4M', ip: '192.168.1.11', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=false, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=XP, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7), userDataDir=C:\Users\Dell\AppData\Local\Temp\scoped_dir5436_7256}, takesHeapSnapshot=true, pageLoadStrategy=normal, unhandledPromptBehavior=, databaseEnabled=false, handlesAlerts=true, version=66.0.3359.139, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 73a06f2f078db7e13d9b6e356561ea42]]>
             </message>
             <full-stacktrace>
-              <![CDATA[io.appium.java_client.service.local.AppiumServerHasNotBeenStartedLocallyException: The local appium server has not been started. The given Node.js executable: C:\Program Files\nodejs\node.exe Arguments: [C:\Users\DELL\AppData\Local\Programs\appium-desktop\resources\app\node_modules\appium\build\lib\main.js, --port, 4723, --address, 127.0.0.1, --log, C:\Users\DELL\eclipse-workspace\AutomationFramework\Appium.log] 
-
-	at io.appium.java_client.service.local.AppiumDriverLocalService.start(AppiumDriverLocalService.java:149)
-	at com.fluke.screens.rough.SampleTest.startService(SampleTest.java:39)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:146)
-	at org.testng.TestRunner.beforeRun(TestRunner.java:626)
-	at org.testng.TestRunner.run(TestRunner.java:594)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
-	at org.testng.TestNG.runSuites(TestNG.java:1144)
-	at org.testng.TestNG.run(TestNG.java:1115)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: java.lang.NoSuchMethodError: com.google.common.util.concurrent.SimpleTimeLimiter.create(Ljava/util/concurrent/ExecutorService;)Lcom/google/common/util/concurrent/SimpleTimeLimiter;
-	at org.openqa.selenium.net.UrlChecker.<init>(UrlChecker.java:62)
-	at io.appium.java_client.service.local.AppiumDriverLocalService.ping(AppiumDriverLocalService.java:113)
-	at io.appium.java_client.service.local.AppiumDriverLocalService.start(AppiumDriverLocalService.java:136)
-	... 24 more
+              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: Element <div class="measurementSelect sprite check-box checked"></div> is not clickable at point (574, 238). Other element would receive the click: <div id="cboxOverlay" style="opacity: 0.5; cursor: pointer; visibility: visible;"></div>
+  (Session info: chrome=66.0.3359.139)
+  (Driver info: chromedriver=2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7),platform=Windows NT 10.0.15063 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
+System info: host: 'DESKTOP-LTFTU4M', ip: '192.168.1.11', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=false, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=XP, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7), userDataDir=C:\Users\Dell\AppData\Local\Temp\scoped_dir5436_7256}, takesHeapSnapshot=true, pageLoadStrategy=normal, unhandledPromptBehavior=, databaseEnabled=false, handlesAlerts=true, version=66.0.3359.139, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 73a06f2f078db7e13d9b6e356561ea42
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+at com.fluke.connect.test_cases.MeasurementScreenTest.deleteMeasurements(MeasurementScreenTest.java:114)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- io.appium.java_client.service.local.AppiumServerHasNotBeenStartedLocallyException -->
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+            <line>
+              <![CDATA[total imgae before deletion is  5]]>
+            </line>
+            <line>
+              <![CDATA[image remaining after deletion 1 image   5]]>
+            </line>
+            <line>
+              <![CDATA[total number of image present5]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- deleteMeasurements -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.fluke.connect.test_cases.MeasurementScreenTest@1d7acb34]" name="afterMethod" is-config="true" duration-ms="366" started-at="2018-05-09T13:13:52Z" finished-at="2018-05-09T13:13:52Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=deleteMeasurements status=FAILURE method=MeasurementScreenTest.deleteMeasurements()[pri:1, instance:com.fluke.connect.test_cases.MeasurementScreenTest@1d7acb34] output=total imgae before deletion is  5]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[<a href='C:\Users\Dell\Documents\FlukeFramework\FlukeFramework\target\surefire-reports\html\blank_09_05_2018_06_43_52.png'> <img src='_blank09_05_2018_06_43_52.png' height='100' width='100'/> </a>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.fluke.connect.test_cases.MeasurementScreenTest@1d7acb34]" name="setUp" is-config="true" duration-ms="24641" started-at="2018-05-09T13:13:52Z" finished-at="2018-05-09T13:14:17Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- startService -->
-        <test-method status="SKIP" signature="test()[pri:0, instance:com.fluke.screens.rough.SampleTest@4fe3c938]" name="test" duration-ms="0" started-at="2018-04-18T14:26:50Z" finished-at="2018-04-18T14:26:50Z">
-          <exception class="io.appium.java_client.service.local.AppiumServerHasNotBeenStartedLocallyException">
-            <message>
-              <![CDATA[The local appium server has not been started. The given Node.js executable: C:\Program Files\nodejs\node.exe Arguments: [C:\Users\DELL\AppData\Local\Programs\appium-desktop\resources\app\node_modules\appium\build\lib\main.js, --port, 4723, --address, 127.0.0.1, --log, C:\Users\DELL\eclipse-workspace\AutomationFramework\Appium.log] 
-]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[io.appium.java_client.service.local.AppiumServerHasNotBeenStartedLocallyException: The local appium server has not been started. The given Node.js executable: C:\Program Files\nodejs\node.exe Arguments: [C:\Users\DELL\AppData\Local\Programs\appium-desktop\resources\app\node_modules\appium\build\lib\main.js, --port, 4723, --address, 127.0.0.1, --log, C:\Users\DELL\eclipse-workspace\AutomationFramework\Appium.log] 
-
-	at io.appium.java_client.service.local.AppiumDriverLocalService.start(AppiumDriverLocalService.java:149)
-	at com.fluke.screens.rough.SampleTest.startService(SampleTest.java:39)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:146)
-	at org.testng.TestRunner.beforeRun(TestRunner.java:626)
-	at org.testng.TestRunner.run(TestRunner.java:594)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
-	at org.testng.TestNG.runSuites(TestNG.java:1144)
-	at org.testng.TestNG.run(TestNG.java:1115)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: java.lang.NoSuchMethodError: com.google.common.util.concurrent.SimpleTimeLimiter.create(Ljava/util/concurrent/ExecutorService;)Lcom/google/common/util/concurrent/SimpleTimeLimiter;
-	at org.openqa.selenium.net.UrlChecker.<init>(UrlChecker.java:62)
-	at io.appium.java_client.service.local.AppiumDriverLocalService.ping(AppiumDriverLocalService.java:113)
-	at io.appium.java_client.service.local.AppiumDriverLocalService.start(AppiumDriverLocalService.java:136)
-	... 24 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- io.appium.java_client.service.local.AppiumServerHasNotBeenStartedLocallyException -->
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="activeSessions()[pri:2, instance:com.fluke.connect.test_cases.MeasurementScreenTest@1d7acb34]" name="activeSessions" duration-ms="5168" started-at="2018-05-09T13:14:17Z" finished-at="2018-05-09T13:14:22Z">
+          <reporter-output>
+            <line>
+              <![CDATA[waiting to load page ]]>
+            </line>
+            <line>
+              <![CDATA[found exception  org.openqa.selenium.InvalidSelectorException: invalid selector: Compound class names not permitted
+  (Session info: chrome=66.0.3359.139)
+  (Driver info: chromedriver=2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7),platform=Windows NT 10.0.15063 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
+System info: host: 'DESKTOP-LTFTU4M', ip: '192.168.1.11', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=false, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=XP, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7), userDataDir=C:\Users\Dell\AppData\Local\Temp\scoped_dir2684_14955}, takesHeapSnapshot=true, pageLoadStrategy=normal, unhandledPromptBehavior=, databaseEnabled=false, handlesAlerts=true, version=66.0.3359.139, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 546dbf9df5095ccbe1d991ff31c75b71
+*** Element info: {Using=class name, value=highcharts-point highcharts-color-0}]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- activeSessions -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.fluke.connect.test_cases.MeasurementScreenTest@1d7acb34]" name="afterMethod" is-config="true" duration-ms="301" started-at="2018-05-09T13:14:22Z" finished-at="2018-05-09T13:14:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=activeSessions status=SUCCESS method=MeasurementScreenTest.activeSessions()[pri:2, instance:com.fluke.connect.test_cases.MeasurementScreenTest@1d7acb34] output=waiting to load page ]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[<a href='C:\Users\Dell\Documents\FlukeFramework\FlukeFramework\target\surefire-reports\html\blank_09_05_2018_06_44_22.png'> <img src='_blank09_05_2018_06_44_22.png' height='100' width='100'/> </a>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="endTest()[pri:0, instance:com.fluke.connect.test_cases.MeasurementScreenTest@1d7acb34]" name="endTest" is-config="true" duration-ms="662" started-at="2018-05-09T13:14:22Z" finished-at="2018-05-09T13:14:23Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test -->
-        <test-method status="SKIP" signature="stopService()[pri:0, instance:com.fluke.screens.rough.SampleTest@4fe3c938]" name="stopService" is-config="true" duration-ms="0" started-at="2018-04-18T14:26:50Z" finished-at="2018-04-18T14:26:50Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- stopService -->
-      </class> <!-- com.fluke.screens.rough.SampleTest -->
+        </test-method> <!-- endTest -->
+      </class> <!-- com.fluke.connect.test_cases.MeasurementScreenTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
